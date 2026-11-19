@@ -1,6 +1,6 @@
 # Tarjeta del modelo — Cobertura forestal (Forest CoverType)
 
-**Versión:** 1.0.0 · **Modelo desplegado:** SVC-RBF calibrado (sigmoid, `CalibratedClassifierCV`, cv=5) · **Alternativo:** HGB calibrado (sigmoid)
+**Versión:** 1.0.0 · **Modelo desplegado:** LinearSVC calibrado (isotonic, `CalibratedClassifierCV`, cv=5) · **Alternativo:** SVC-RBF calibrado (sigmoid)
 
 ## Uso previsto
 Apoyo a la cartografía de cobertura forestal en zonas con variables cartográficas como las del Roosevelt National Forest (Colorado, EE. UU.).
@@ -14,15 +14,15 @@ UCI Covertype: 581 012 parcelas de 30 × 30 m, 54 variables (10 continuas, 4 ár
 ## Métricas (TEST, bloques no vistos)
 | Métrica | Valor |
 |---|---|
-| macro-F1 | 0.403 |
-| balanced accuracy | 0.456 |
-| MCC | 0.416 |
-| AUC macro (OvR) | 0.870 |
-| macro-F1 en IID (misma distribución) | 0.697 |
-| ECE (15 intervalos, calibrado) | 0.135 |
-| Cobertura conforme α=0.1 (IID / TEST) | 0.900 / 0.816 |
+| macro-F1 | 0.441 |
+| balanced accuracy | 0.433 |
+| MCC | 0.442 |
+| AUC macro (OvR) | 0.894 |
+| macro-F1 en IID (misma distribución) | 0.500 |
+| ECE (15 intervalos, calibrado) | 0.036 |
+| Cobertura conforme α=0.1 (IID / TEST) | 0.899 / 0.898 |
 
-Recall por clase en TEST: Spruce/Fir: 0.59, Lodgepole Pine: 0.73, Ponderosa Pine: 0.27, Cottonwood/Willow: 0.00, Aspen: 0.00, Douglas-fir: 0.44, Krummholz: 0.70
+Recall por clase en TEST: Spruce/Fir: 0.61, Lodgepole Pine: 0.77, Ponderosa Pine: 0.51, Cottonwood/Willow: 0.00, Aspen: 0.01, Douglas-fir: 0.06, Krummholz: 0.63
 
 ## Limitaciones
 - Los bloques son pseudo-espaciales (no hay coordenadas): aproximan, no garantizan, independencia espacial.

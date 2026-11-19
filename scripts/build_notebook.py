@@ -1288,13 +1288,13 @@ pi3 = f'''### PI3 · Calibración y predicción conforme
 - **Calibración** ({mc_}, elegida por la regla del protocolo): ECE (15 intervalos) de {CHAMPION} =
   {f3(cal_get(CHAMPION, mc_, "IID", "ECE (15)"))} en IID y {f3(cal_get(CHAMPION, mc_, "TEST", "ECE (15)"))} en TEST; Brier =
   {f3(cal_get(CHAMPION, mc_, "IID", "Brier"))} / {f3(cal_get(CHAMPION, mc_, "TEST", "Brier"))}.{alt_txt} La calibración se
-  aprende en la distribución de entrenamiento y **se degrada fuera de ella**.
+  aprende en la distribución de entrenamiento: {"se degrada claramente" if cal_get(CHAMPION, mc_, "TEST", "ECE (15)") > 2 * cal_get(CHAMPION, mc_, "IID", "ECE (15)") else "se degrada poco"} en bloques no vistos.
 - **Conforme dividida (α = {cfg["calibration"]["conformal_alpha"]})**: cobertura empírica de {CHAMPION} =
   **{f3(cfm.loc[(CHAMPION, "IID"), "cobertura"])}** en IID (garantía nominal {1 - cfg["calibration"]["conformal_alpha"]:.2f},
   tamaño medio {cfm.loc[(CHAMPION, "IID"), "tamaño medio"]:.2f}) y **{f3(cfm.loc[(CHAMPION, "TEST"), "cobertura"])}** en
   TEST (tamaño {cfm.loc[(CHAMPION, "TEST"), "tamaño medio"]:.2f}).
-- **Respuesta:** la garantía se cumple cuando CAL y los datos nuevos son intercambiables (IID) y **se pierde** en bloques no
-  vistos. Además es **marginal**: en TEST, las clases peor cubiertas son {worst}. La versión Mondrian (un cuantil por clase)
+- **Respuesta:** la garantía solo está asegurada cuando CAL y los datos nuevos son intercambiables (IID). {"En los bloques no vistos la cobertura global se mantiene cerca de la nominal, pero no por garantía: el cambio de distribución altera qué clases quedan cubiertas." if cfm.loc[(CHAMPION, "TEST"), "cobertura"] >= 1 - cfg["calibration"]["conformal_alpha"] - 0.02 else "En los bloques no vistos la cobertura global **cae por debajo** de la nominal."} Además, la
+  garantía es **marginal**: en TEST, las clases peor cubiertas son {worst}. La versión Mondrian (un cuantil por clase)
   apunta a la cobertura condicional por clase dentro de la distribución, pero tampoco la garantiza en bloques no vistos.
 '''
 

@@ -111,9 +111,9 @@
   {
    "kernel": "linear",
    "n": 2000,
-   "fit_s": 0.23495339998044074,
-   "fit_mem_mb": 12.51171875,
-   "pred_s": 0.24203550000675023,
+   "fit_s": 0.23051569995004684,
+   "fit_mem_mb": 8.53125,
+   "pred_s": 0.2043355000205338,
    "n_sv": 1328,
    "macro_f1": 0.3227514318712141,
    "balanced_accuracy": 0.3106103902592312,
@@ -123,9 +123,9 @@
   {
    "kernel": "linear",
    "n": 5000,
-   "fit_s": 1.0595475999871269,
-   "fit_mem_mb": 26.52734375,
-   "pred_s": 0.45272220007609576,
+   "fit_s": 1.4065036999527365,
+   "fit_mem_mb": 25.03125,
+   "pred_s": 0.685006899992004,
    "n_sv": 3283,
    "macro_f1": 0.32391972941745323,
    "balanced_accuracy": 0.30398101626274127,
@@ -135,9 +135,9 @@
   {
    "kernel": "linear",
    "n": 10000,
-   "fit_s": 4.849580700043589,
-   "fit_mem_mb": 138.7578125,
-   "pred_s": 0.8943387999897823,
+   "fit_s": 6.346607999992557,
+   "fit_mem_mb": 134.9375,
+   "pred_s": 1.075219799997285,
    "n_sv": 6465,
    "macro_f1": 0.3271053395451445,
    "balanced_accuracy": 0.3005424048808702,
@@ -147,9 +147,9 @@
   {
    "kernel": "linear",
    "n": 20000,
-   "fit_s": 28.53668900008779,
-   "fit_mem_mb": 376.34375,
-   "pred_s": 3.0915246999356896,
+   "fit_s": 33.11517400003504,
+   "fit_mem_mb": 370.2578125,
+   "pred_s": 2.860763799981214,
    "n_sv": 12768,
    "macro_f1": 0.3429128197920297,
    "balanced_accuracy": 0.3197418065452386,
@@ -159,9 +159,9 @@
   {
    "kernel": "rbf",
    "n": 2000,
-   "fit_s": 0.151132500031963,
-   "fit_mem_mb": 1.57421875,
-   "pred_s": 0.7222597999498248,
+   "fit_s": 0.20783049997407943,
+   "fit_mem_mb": 48.42578125,
+   "pred_s": 0.7104270999552682,
    "n_sv": 1471,
    "macro_f1": 0.29006673982934267,
    "balanced_accuracy": 0.2714934754461336,
@@ -171,9 +171,9 @@
   {
    "kernel": "rbf",
    "n": 5000,
-   "fit_s": 0.7211801999947056,
-   "fit_mem_mb": 3.7265625,
-   "pred_s": 1.653267899993807,
+   "fit_s": 0.7378122000955045,
+   "fit_mem_mb": 4.8203125,
+   "pred_s": 1.6168637999799103,
    "n_sv": 3330,
    "macro_f1": 0.2832751296313667,
    "balanced_accuracy": 0.26751819400306287,
@@ -183,9 +183,9 @@
   {
    "kernel": "rbf",
    "n": 10000,
-   "fit_s": 3.7770676999352872,
-   "fit_mem_mb": 30.17578125,
-   "pred_s": 3.1071773999137804,
+   "fit_s": 9.168046500068158,
+   "fit_mem_mb": 25.9140625,
+   "pred_s": 3.7580293000210077,
    "n_sv": 6205,
    "macro_f1": 0.28813449953053843,
    "balanced_accuracy": 0.2681211963670959,
@@ -195,9 +195,9 @@
   {
    "kernel": "rbf",
    "n": 20000,
-   "fit_s": 20.887006300035864,
-   "fit_mem_mb": 361.01953125,
-   "pred_s": 6.110403100028634,
+   "fit_s": 28346.27946920006,
+   "fit_mem_mb": 283.82421875,
+   "pred_s": 6.694061600021087,
    "n_sv": 11589,
    "macro_f1": 0.2904829519223373,
    "balanced_accuracy": 0.2703914195357941,
@@ -207,9 +207,9 @@
   {
    "kernel": "poly",
    "n": 2000,
-   "fit_s": 0.11923640000168234,
-   "fit_mem_mb": 0.09765625,
-   "pred_s": 0.2241374000441283,
+   "fit_s": 0.2793676999863237,
+   "fit_mem_mb": 50.375,
+   "pred_s": 0.2292367999907583,
    "n_sv": 1487,
    "macro_f1": 0.2672228496813486,
    "balanced_accuracy": 0.2501282163266697,
@@ -219,9 +219,9 @@
   {
    "kernel": "poly",
    "n": 5000,
-   "fit_s": 0.6840762000065297,
-   "fit_mem_mb": 3.3203125,
-   "pred_s": 0.4956338000483811,
+   "fit_s": 0.7658911000471562,
+   "fit_mem_mb": 5.0546875,
+   "pred_s": 0.517369500012137,
    "n_sv": 3311,
    "macro_f1": 0.2868773656249388,
    "balanced_accuracy": 0.2667468032257468,
@@ -231,9 +231,9 @@
   {
    "kernel": "poly",
    "n": 10000,
-   "fit_s": 3.1841360999969766,
-   "fit_mem_mb": 21.4921875,
-   "pred_s": 1.4791571999667212,
+   "fit_s": 7.030083599966019,
+   "fit_mem_mb": 136.734375,
+   "pred_s": 1.7266543000005186,
    "n_sv": 6122,
    "macro_f1": 0.2922753793729335,
    "balanced_accuracy": 0.27310631218377196,
@@ -243,9 +243,9 @@
   {
    "kernel": "poly",
    "n": 20000,
-   "fit_s": 21.367005600011908,
-   "fit_mem_mb": 410.6484375,
-   "pred_s": 2.5371436999412253,
+   "fit_s": 29.048481400008313,
+   "fit_mem_mb": 363.94140625,
+   "pred_s": 2.6361498000333086,
    "n_sv": 11404,
    "macro_f1": 0.29394162299310095,
    "balanced_accuracy": 0.2749155527375618,
@@ -256,24 +256,24 @@
  "complexity_fit": [
   {
    "kernel": "linear",
-   "b (ajuste)": 2.0794732254552306,
-   "IC95 inf": 1.4198091137733186,
-   "IC95 sup": 2.7391373371371426,
-   "b (predicción)": 1.0794845638726804
+   "b (ajuste)": 2.152452873116031,
+   "IC95 inf": 1.8624027907905127,
+   "IC95 sup": 2.4425029554415487,
+   "b (predicción)": 1.1046538953953124
   },
   {
    "kernel": "poly",
-   "b (ajuste)": 2.2377960405869333,
-   "IC95 inf": 1.650136591666119,
-   "IC95 sup": 2.8254554895077475,
-   "b (predicción)": 1.0975120358655353
+   "b (ajuste)": 2.0981580387929224,
+   "IC95 inf": 0.8341729450524007,
+   "IC95 sup": 3.3621431325334443,
+   "b (predicción)": 1.1197433933131737
   },
   {
    "kernel": "rbf",
-   "b (ajuste)": 2.1490528494384034,
-   "IC95 inf": 1.550761067658749,
-   "IC95 sup": 2.7473446312180574,
-   "b (predicción)": 0.9249038604286182
+   "b (ajuste)": 4.8586545040953775,
+   "IC95 inf": -2.2791745849506357,
+   "IC95 sup": 11.996483593141392,
+   "b (predicción)": 0.994773590349293
   }
  ],
  "approximations": [
@@ -281,9 +281,9 @@
    "modelo": "Nyström m=100 + SVM lineal",
    "familia": "aproximación",
    "n_train": 333974,
-   "fit_s": 5.331330400076695,
-   "fit_mem_mb": 228.44921875,
-   "pred_s": 0.02556980005465448,
+   "fit_s": 6.114760400028899,
+   "fit_mem_mb": 272.79296875,
+   "pred_s": 0.023901399923488498,
    "macro_f1": 0.2590649465558438,
    "balanced_accuracy": 0.28981895079247905,
    "mcc": 0.33684525913244767,
@@ -293,9 +293,9 @@
    "modelo": "Nyström m=300 + SVM lineal",
    "familia": "aproximación",
    "n_train": 333974,
-   "fit_s": 11.905294799944386,
-   "fit_mem_mb": 228.4296875,
-   "pred_s": 0.0524957999587059,
+   "fit_s": 12.528751699952409,
+   "fit_mem_mb": 232.14453125,
+   "pred_s": 0.04584110004361719,
    "macro_f1": 0.29437707773114835,
    "balanced_accuracy": 0.31982638376718825,
    "mcc": 0.32318608279897393,
@@ -305,9 +305,9 @@
    "modelo": "Nyström m=1000 + SVM lineal",
    "familia": "aproximación",
    "n_train": 333974,
-   "fit_s": 46.15764909994323,
-   "fit_mem_mb": 268.90234375,
-   "pred_s": 0.36550079996231943,
+   "fit_s": 42.302990399999544,
+   "fit_mem_mb": 258.1328125,
+   "pred_s": 0.27513189997989684,
    "macro_f1": 0.48465732364026853,
    "balanced_accuracy": 0.5022391456345087,
    "mcc": 0.348196817144389,
@@ -317,9 +317,9 @@
    "modelo": "RFF m=100 + SVM lineal",
    "familia": "aproximación",
    "n_train": 333974,
-   "fit_s": 7.997268700040877,
-   "fit_mem_mb": 290.50390625,
-   "pred_s": 0.05005129997152835,
+   "fit_s": 4.128727699979208,
+   "fit_mem_mb": 289.1953125,
+   "pred_s": 0.012533199973404408,
    "macro_f1": 0.18845810518067072,
    "balanced_accuracy": 0.26911590878651814,
    "mcc": 0.15837269733393236,
@@ -329,9 +329,9 @@
    "modelo": "RFF m=300 + SVM lineal",
    "familia": "aproximación",
    "n_train": 333974,
-   "fit_s": 7.62842029996682,
-   "fit_mem_mb": 275.27734375,
-   "pred_s": 0.017208200064487755,
+   "fit_s": 6.778352199937217,
+   "fit_mem_mb": 228.46484375,
+   "pred_s": 0.0187704999698326,
    "macro_f1": 0.27240199365755463,
    "balanced_accuracy": 0.2672443809606521,
    "mcc": 0.34796830241139054,
@@ -341,9 +341,9 @@
    "modelo": "RFF m=1000 + SVM lineal",
    "familia": "aproximación",
    "n_train": 333974,
-   "fit_s": 17.441678400035016,
-   "fit_mem_mb": 246.7109375,
-   "pred_s": 0.03795630007516593,
+   "fit_s": 16.44842850009445,
+   "fit_mem_mb": 222.8359375,
+   "pred_s": 0.037734300014562905,
    "macro_f1": 0.4032686946651424,
    "balanced_accuracy": 0.4796698967007484,
    "mcc": 0.3040727868513673,
@@ -353,9 +353,9 @@
    "modelo": "LogReg multinomial",
    "familia": "referencia",
    "n_train": 333974,
-   "fit_s": 29.932954099960625,
-   "fit_mem_mb": 394.8203125,
-   "pred_s": 0.0184976999880746,
+   "fit_s": 29.176441799965687,
+   "fit_mem_mb": 379.84765625,
+   "pred_s": 0.015530499978922307,
    "macro_f1": 0.3338996716563343,
    "balanced_accuracy": 0.3074986711027056,
    "mcc": 0.4319003487326966,
@@ -365,9 +365,9 @@
    "modelo": "HGB",
    "familia": "referencia",
    "n_train": 333974,
-   "fit_s": 116.33648589998484,
-   "fit_mem_mb": 512.91015625,
-   "pred_s": 0.3787245999556035,
+   "fit_s": 101.33873209997546,
+   "fit_mem_mb": 506.1484375,
+   "pred_s": 0.27040899998974055,
    "macro_f1": 0.5904751889860104,
    "balanced_accuracy": 0.5180386350544882,
    "mcc": 0.40590699467650027,
@@ -377,9 +377,9 @@
    "modelo": "SVC-RBF exacta n=20000",
    "familia": "SVM exacta",
    "n_train": 20000,
-   "fit_s": 20.887006300035864,
-   "fit_mem_mb": 361.01953125,
-   "pred_s": 6.110403100028634,
+   "fit_s": 28346.27946920006,
+   "fit_mem_mb": 283.82421875,
+   "pred_s": 6.694061600021087,
    "macro_f1": 0.2904829519223373,
    "balanced_accuracy": 0.2703914195357941,
    "mcc": 0.36592108133355655,
@@ -389,7 +389,7 @@
  "multiclass": [
   {
    "estrategia": "OvO · sin pesos",
-   "tiempo_s": 6.359823499922641,
+   "tiempo_s": 5.769254900049418,
    "macro_f1": 0.43872055948558275,
    "balanced_accuracy": 0.4074924786715255,
    "mcc": 0.4481462112498842,
@@ -397,7 +397,7 @@
   },
   {
    "estrategia": "OvO · balanced",
-   "tiempo_s": 6.0310598000651225,
+   "tiempo_s": 6.006015900056809,
    "macro_f1": 0.4428185807871482,
    "balanced_accuracy": 0.44527835202183486,
    "mcc": 0.4436925623316835,
@@ -405,7 +405,7 @@
   },
   {
    "estrategia": "OvR · sin pesos",
-   "tiempo_s": 14.246488599921577,
+   "tiempo_s": 13.783176600001752,
    "macro_f1": 0.40672356184509184,
    "balanced_accuracy": 0.3865427221395435,
    "mcc": 0.4469710247074727,
@@ -413,13 +413,26 @@
   },
   {
    "estrategia": "OvR · balanced",
-   "tiempo_s": 14.297693900065497,
+   "tiempo_s": 18.38475060008932,
    "macro_f1": 0.4129761506730579,
    "balanced_accuracy": 0.40656076655967405,
    "mcc": 0.44442152419422903,
    "accuracy": 0.6448333333333334
   }
  ],
+ "selection": {
+  "primero": "SVC-RBF",
+  "segundo": "LinearSVC",
+  "macro_f1_primero": 0.4064739379394142,
+  "macro_f1_segundo": 0.37406825801124766,
+  "pareada": true,
+  "t": 0.6835667018453786,
+  "p": 0.5317917032231428,
+  "significativa": false,
+  "ms_1000_primero": 671.7184141056719,
+  "ms_1000_segundo": 4.693127692664773,
+  "campeon": "LinearSVC"
+ },
  "nested": [
   {
    "modelo": "LinearSVC",
@@ -429,7 +442,10 @@
    "mcc": 0.3086955669258635,
    "accuracy": 0.48056537102473496,
    "inner_best": 0.40083792903831705,
-   "tiempo_s": 6.677704300032929
+   "n_train": 4868,
+   "n_test": 1132,
+   "pred_ms_1000": 5.307243811953879,
+   "tiempo_s": 6.517907200031914
   },
   {
    "modelo": "LinearSVC",
@@ -439,7 +455,10 @@
    "mcc": 0.30483521280736814,
    "accuracy": 0.6208267090620032,
    "inner_best": 0.3904622339898425,
-   "tiempo_s": 1.2613459998974577
+   "n_train": 4742,
+   "n_test": 1258,
+   "pred_ms_1000": 3.8571541555912865,
+   "tiempo_s": 0.7797899999422953
   },
   {
    "modelo": "LinearSVC",
@@ -449,7 +468,10 @@
    "mcc": 0.34534527978865653,
    "accuracy": 0.6380165289256199,
    "inner_best": 0.352120554029781,
-   "tiempo_s": 1.159970499924384
+   "n_train": 4790,
+   "n_test": 1210,
+   "pred_ms_1000": 4.098512336211511,
+   "tiempo_s": 0.8943875000113621
   },
   {
    "modelo": "LinearSVC",
@@ -459,7 +481,10 @@
    "mcc": 0.4018711490356009,
    "accuracy": 0.7351778656126482,
    "inner_best": 0.33765874550965247,
-   "tiempo_s": 1.099600699963048
+   "n_train": 4735,
+   "n_test": 1265,
+   "pred_ms_1000": 4.883952578713772,
+   "tiempo_s": 0.888063499936834
   },
   {
    "modelo": "LinearSVC",
@@ -469,7 +494,10 @@
    "mcc": 0.42027856525760804,
    "accuracy": 0.7224669603524229,
    "inner_best": 0.32918356234027385,
-   "tiempo_s": 1.0922772000776604
+   "n_train": 4865,
+   "n_test": 1135,
+   "pred_ms_1000": 4.693127692664773,
+   "tiempo_s": 0.857764600077644
   },
   {
    "modelo": "SVC-RBF",
@@ -479,7 +507,10 @@
    "mcc": 0.3481051359141765,
    "accuracy": 0.5035335689045937,
    "inner_best": 0.3531192711363185,
-   "tiempo_s": 6.224829000071622
+   "n_train": 4868,
+   "n_test": 1132,
+   "pred_ms_1000": 642.06351585729,
+   "tiempo_s": 5.107448099995963
   },
   {
    "modelo": "SVC-RBF",
@@ -489,7 +520,10 @@
    "mcc": 0.3362314171979909,
    "accuracy": 0.6518282988871225,
    "inner_best": 0.3204455288594571,
-   "tiempo_s": 6.522846599924378
+   "n_train": 4742,
+   "n_test": 1258,
+   "pred_ms_1000": 680.4785373604402,
+   "tiempo_s": 5.217997799976729
   },
   {
    "modelo": "SVC-RBF",
@@ -499,7 +533,10 @@
    "mcc": 0.3320767795629401,
    "accuracy": 0.6239669421487604,
    "inner_best": 0.3483448203000758,
-   "tiempo_s": 6.399918500101194
+   "n_train": 4790,
+   "n_test": 1210,
+   "pred_ms_1000": 641.6182644657545,
+   "tiempo_s": 5.318224299931899
   },
   {
    "modelo": "SVC-RBF",
@@ -509,7 +546,10 @@
    "mcc": 0.37648708038226175,
    "accuracy": 0.724901185770751,
    "inner_best": 0.39031731973393874,
-   "tiempo_s": 6.277582700015046
+   "n_train": 4735,
+   "n_test": 1265,
+   "pred_ms_1000": 673.6449011980663,
+   "tiempo_s": 5.251846199971624
   },
   {
    "modelo": "SVC-RBF",
@@ -519,7 +559,10 @@
    "mcc": 0.4362361186341583,
    "accuracy": 0.7295154185022027,
    "inner_best": 0.3509323539420193,
-   "tiempo_s": 6.459909799974412
+   "n_train": 4865,
+   "n_test": 1135,
+   "pred_ms_1000": 671.7184141056719,
+   "tiempo_s": 5.63177880004514
   },
   {
    "modelo": "HGB",
@@ -529,7 +572,10 @@
    "mcc": 0.32695838212502826,
    "accuracy": 0.43716104692289554,
    "inner_best": 0.288447272217764,
-   "tiempo_s": 14.915857200045139
+   "n_train": 15759,
+   "n_test": 4241,
+   "pred_ms_1000": 14.804975264498196,
+   "tiempo_s": 12.435272800037637
   },
   {
    "modelo": "HGB",
@@ -539,7 +585,10 @@
    "mcc": 0.45221863469731344,
    "accuracy": 0.7160106254527892,
    "inner_best": 0.35003418075702625,
-   "tiempo_s": 45.54237949999515
+   "n_train": 15859,
+   "n_test": 4141,
+   "pred_ms_1000": 52.76039602251603,
+   "tiempo_s": 38.36832070001401
   },
   {
    "modelo": "HGB",
@@ -549,7 +598,10 @@
    "mcc": 0.3873294589910057,
    "accuracy": 0.667314702308627,
    "inner_best": 0.3867341931696728,
-   "tiempo_s": 34.98666129994672
+   "n_train": 15885,
+   "n_test": 4115,
+   "pred_ms_1000": 22.446682856600383,
+   "tiempo_s": 28.83706060005352
   },
   {
    "modelo": "HGB",
@@ -559,7 +611,10 @@
    "mcc": 0.4599215332318333,
    "accuracy": 0.7470899470899471,
    "inner_best": 0.365481149893828,
-   "tiempo_s": 32.31633649999276
+   "n_train": 16220,
+   "n_test": 3780,
+   "pred_ms_1000": 30.382910051023362,
+   "tiempo_s": 26.734692400088534
   },
   {
    "modelo": "HGB",
@@ -569,7 +624,10 @@
    "mcc": 0.4025360210017414,
    "accuracy": 0.7010475423045931,
    "inner_best": 0.2928481204984876,
-   "tiempo_s": 30.866194100002758
+   "n_train": 16277,
+   "n_test": 3723,
+   "pred_ms_1000": 25.200886374703185,
+   "tiempo_s": 25.829397800029255
   }
  ],
  "best_params": {
@@ -587,8 +645,8 @@
    "min_samples_leaf": 13
   }
  },
- "champion": "SVC-RBF",
- "alternative": "HGB",
+ "champion": "LinearSVC",
+ "alternative": "SVC-RBF",
  "test_metrics": [
   {
    "modelo": "HGB",
@@ -601,8 +659,8 @@
    "log-loss TEST": 1.1449550319937405,
    "macro-F1 IID": 0.9202188497010918,
    "brecha IID−TEST": 0.4321385542598865,
-   "ajuste s": 107.94704140000977,
-   "pred s": 13.529637499945238
+   "ajuste s": 95.09663140005432,
+   "pred s": 11.291884700069204
   },
   {
    "modelo": "LinearSVC",
@@ -615,8 +673,8 @@
    "log-loss TEST": null,
    "macro-F1 IID": 0.4995270476864044,
    "brecha IID−TEST": 0.05887565157585728,
-   "ajuste s": 32.395339800044894,
-   "pred s": 0.21602039993740618
+   "ajuste s": 30.535881799994968,
+   "pred s": 0.17630759999155998
   },
   {
    "modelo": "Nyström-1000",
@@ -629,8 +687,8 @@
    "log-loss TEST": null,
    "macro-F1 IID": 0.6888952126754841,
    "brecha IID−TEST": 0.250712347296951,
-   "ajuste s": 50.56283389998134,
-   "pred s": 5.721850999980234
+   "ajuste s": 46.85253189993091,
+   "pred s": 4.597215800080448
   },
   {
    "modelo": "SVC-RBF",
@@ -643,8 +701,8 @@
    "log-loss TEST": null,
    "macro-F1 IID": 0.696672133554702,
    "brecha IID−TEST": 0.29332707271255204,
-   "ajuste s": 35.2489699999569,
-   "pred s": 180.50209580000956
+   "ajuste s": 36.06184410001151,
+   "pred s": 165.54365610005334
   },
   {
    "modelo": "LogReg",
@@ -657,16 +715,16 @@
    "log-loss TEST": 0.7655524658595674,
    "macro-F1 IID": 0.5610427218220313,
    "brecha IID−TEST": 0.16128773291474924,
-   "ajuste s": 40.3256816000212,
-   "pred s": 0.15317040006630123
+   "ajuste s": 36.46016680006869,
+   "pred s": 0.13794009992852807
   }
  ],
  "test_ci": [
   {
    "metric": "macro_f1",
-   "estimate": 0.34572433786469997,
-   "ci_low": 0.3394049864220396,
-   "ci_high": 0.3517258756152205,
+   "estimate": 0.40334506084215,
+   "ci_low": 0.3959724841590462,
+   "ci_high": 0.4103468548844239,
    "modelo": "SVC-RBF"
   },
   {
@@ -685,9 +743,9 @@
   },
   {
    "metric": "macro_f1",
-   "estimate": 0.37770119666618324,
-   "ci_low": 0.36883225214559007,
-   "ci_high": 0.3859362067862276,
+   "estimate": 0.4406513961105471,
+   "ci_low": 0.43030429416985505,
+   "ci_high": 0.4502589079172655,
    "modelo": "LinearSVC"
   },
   {
@@ -706,9 +764,9 @@
   },
   {
    "metric": "macro_f1",
-   "estimate": 0.3755853131815998,
-   "ci_low": 0.3680573649248259,
-   "ci_high": 0.383203146713499,
+   "estimate": 0.4381828653785331,
+   "ci_low": 0.4294002590789635,
+   "ci_high": 0.44707033783241545,
    "modelo": "Nyström-1000"
   },
   {
@@ -727,9 +785,9 @@
   },
   {
    "metric": "macro_f1",
-   "estimate": 0.3426471333490989,
-   "ci_low": 0.33673641650677094,
-   "ci_high": 0.34791708525053466,
+   "estimate": 0.39975498890728206,
+   "ci_low": 0.3928591525912328,
+   "ci_high": 0.40590326612562383,
    "modelo": "LogReg"
   },
   {
@@ -748,9 +806,9 @@
   },
   {
    "metric": "macro_f1",
-   "estimate": 0.4183545389496045,
-   "ci_low": 0.4099458954669701,
-   "ci_high": 0.42621258225633685,
+   "estimate": 0.4880802954412053,
+   "ci_low": 0.47827021137813175,
+   "ci_high": 0.497248012632393,
    "modelo": "HGB"
   },
   {
@@ -821,6 +879,71 @@
   }
  ],
  "confusion": {
+  "LinearSVC": [
+   [
+    0.6143,
+    0.2937,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.092
+   ],
+   [
+    0.2305,
+    0.7653,
+    0.0025,
+    0.0,
+    0.0001,
+    0.0,
+    0.0016
+   ],
+   [
+    0.0,
+    0.4878,
+    0.509,
+    0.0,
+    0.0,
+    0.0032,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.044,
+    0.8936,
+    0.0477,
+    0.0,
+    0.0147,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.8423,
+    0.0968,
+    0.0,
+    0.0,
+    0.0609,
+    0.0
+   ],
+   [
+    0.3247,
+    0.0426,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.6326
+   ]
+  ],
   "SVC-RBF": [
    [
     0.5945,
@@ -885,71 +1008,6 @@
     0.0,
     0.704
    ]
-  ],
-  "HGB": [
-   [
-    0.7056,
-    0.1953,
-    0.0002,
-    0.0,
-    0.0024,
-    0.0063,
-    0.0902
-   ],
-   [
-    0.2602,
-    0.7291,
-    0.0022,
-    0.0,
-    0.0007,
-    0.0072,
-    0.0006
-   ],
-   [
-    0.0,
-    0.5461,
-    0.3595,
-    0.0,
-    0.0,
-    0.0944,
-    0.0
-   ],
-   [
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0
-   ],
-   [
-    0.0239,
-    0.8422,
-    0.0239,
-    0.0,
-    0.0697,
-    0.0404,
-    0.0
-   ],
-   [
-    0.0,
-    0.0323,
-    0.0143,
-    0.0,
-    0.0,
-    0.9534,
-    0.0
-   ],
-   [
-    0.3141,
-    0.0092,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.6767
-   ]
   ]
  },
  "nadeau_bengio": [
@@ -983,16 +1041,16 @@
  ],
  "mcnemar": [
   {
-   "A": "SVC-RBF",
-   "B": "HGB",
-   "n_A_ok_B_fail": 8605,
-   "n_A_fail_B_ok": 16077,
-   "chi2": 2261.3986305809904,
-   "p_value": 0.0,
-   "odds_ratio": 0.5352511273518893,
-   "Δ macro-F1": -0.07263020108490453,
-   "IC95 Δ inf": -0.08027735387334625,
-   "IC95 Δ sup": -0.065395028715161
+   "A": "LinearSVC",
+   "B": "SVC-RBF",
+   "n_A_ok_B_fail": 15869,
+   "n_A_fail_B_ok": 12644,
+   "chi2": 364.5416476694841,
+   "p_value": 2.8884855532852106e-81,
+   "odds_ratio": 1.2550516034639567,
+   "Δ macro-F1": 0.037306335268397106,
+   "IC95 Δ inf": 0.026750093652627795,
+   "IC95 Δ sup": 0.047425956078927765
   },
   {
    "A": "SVC-RBF",
@@ -1002,9 +1060,9 @@
    "chi2": 5.977492124784066,
    "p_value": 0.014489591558500206,
    "odds_ratio": 0.9656463773905228,
-   "Δ macro-F1": -0.02986097531689985,
-   "IC95 Δ inf": -0.0364799269820598,
-   "IC95 Δ sup": -0.023723300082680115
+   "Δ macro-F1": -0.03483780453638313,
+   "IC95 Δ inf": -0.04255991481240308,
+   "IC95 Δ sup": -0.02767718342979345
   },
   {
    "A": "Nyström-1000",
@@ -1014,83 +1072,63 @@
    "chi2": 269.991211223593,
    "p_value": 1.1397897007922018e-60,
    "odds_ratio": 0.8285272148320091,
-   "Δ macro-F1": -0.002115883484583414,
-   "IC95 Δ inf": -0.012867479162385894,
-   "IC95 Δ sup": 0.008708218683826503
+   "Δ macro-F1": -0.0024685307320139738,
+   "IC95 Δ inf": -0.015012059022783561,
+   "IC95 Δ sup": 0.0101595884644643
   },
   {
-   "A": "SVC-RBF",
+   "A": "LinearSVC",
    "B": "LogReg",
-   "n_A_ok_B_fail": 11382,
-   "n_A_fail_B_ok": 13283,
-   "chi2": 146.3612406243665,
-   "p_value": 1.0823537172242115e-33,
-   "odds_ratio": 0.8568901268490985,
-   "Δ macro-F1": 0.003077204515601062,
-   "IC95 Δ inf": -0.0018404458065206647,
-   "IC95 Δ sup": 0.008112034572198388
+   "n_A_ok_B_fail": 7742,
+   "n_A_fail_B_ok": 6418,
+   "chi2": 123.61080508474576,
+   "p_value": 1.0249945128398617e-28,
+   "odds_ratio": 1.2062787255589311,
+   "Δ macro-F1": 0.04089640720326504,
+   "IC95 Δ inf": 0.031270339146976786,
+   "IC95 Δ sup": 0.050356947723923115
   }
  ],
  "calibration": [
   {
-   "modelo": "HGB",
+   "modelo": "LinearSVC",
    "método": "isotonic",
    "conjunto": "IID",
-   "ECE (15)": 0.033302410901609784,
-   "ECE por clase (media)": 0.010739271791854941,
-   "Brier": 0.09030026167096364,
-   "log-loss": 0.16215338017538888,
-   "macro-F1": 0.8852921048037903
+   "ECE (15)": 0.01893984502700727,
+   "ECE por clase (media)": 0.00729517062693892,
+   "Brier": 0.3914279805253541,
+   "log-loss": 0.6540432910375527,
+   "macro-F1": 0.5279023139930535
   },
   {
-   "modelo": "HGB",
+   "modelo": "LinearSVC",
    "método": "sigmoid",
    "conjunto": "IID",
-   "ECE (15)": 0.036783726055303466,
-   "ECE por clase (media)": 0.011514855719043319,
-   "Brier": 0.09036287069511323,
-   "log-loss": 0.1635668833748186,
-   "macro-F1": 0.9022551303616229
+   "ECE (15)": 0.024798774834595923,
+   "ECE por clase (media)": 0.011012677388901092,
+   "Brier": 0.39360612648613325,
+   "log-loss": 0.6633915397106249,
+   "macro-F1": 0.5303176001991999
   },
   {
-   "modelo": "HGB",
-   "método": "sin calibrar",
-   "conjunto": "IID",
-   "ECE (15)": 0.005202087822323598,
-   "ECE por clase (media)": 0.004764358441242686,
-   "Brier": 0.07331831255174538,
-   "log-loss": 0.1449913251420499,
-   "macro-F1": 0.9202188497010918
-  },
-  {
-   "modelo": "HGB",
+   "modelo": "LinearSVC",
    "método": "isotonic",
    "conjunto": "TEST",
-   "ECE (15)": 0.15604041832109702,
-   "ECE por clase (media)": 0.0484051915865241,
-   "Brier": 0.449327654078768,
-   "log-loss": 1.040519885049846,
-   "macro-F1": 0.4826566015281976
+   "ECE (15)": 0.03639999974790171,
+   "ECE por clase (media)": 0.025162887224147577,
+   "Brier": 0.4318777566482707,
+   "log-loss": 0.7145569742262662,
+   "macro-F1": 0.46712930014130033
   },
   {
-   "modelo": "HGB",
+   "modelo": "LinearSVC",
    "método": "sigmoid",
    "conjunto": "TEST",
-   "ECE (15)": 0.15709583441455577,
-   "ECE por clase (media)": 0.04776173040897107,
-   "Brier": 0.44631656942683656,
-   "log-loss": 1.0027303214339607,
-   "macro-F1": 0.48019896314483224
-  },
-  {
-   "modelo": "HGB",
-   "método": "sin calibrar",
-   "conjunto": "TEST",
-   "ECE (15)": 0.19556643494195255,
-   "ECE por clase (media)": 0.056394216608649815,
-   "Brier": 0.4791827826709337,
-   "log-loss": 1.1449550319937405,
-   "macro-F1": 0.4880802954412053
+   "ECE (15)": 0.03480194893064477,
+   "ECE por clase (media)": 0.025432701837666914,
+   "Brier": 0.4310913399598691,
+   "log-loss": 0.6983407930339617,
+   "macro-F1": 0.4433322321986369
   },
   {
    "modelo": "SVC-RBF",
@@ -1134,10 +1172,30 @@
   }
  ],
  "calibration_method": {
-  "SVC-RBF": "sigmoid",
-  "HGB": "sigmoid"
+  "LinearSVC": "isotonic",
+  "SVC-RBF": "sigmoid"
  },
  "conformal": [
+  {
+   "modelo": "LinearSVC",
+   "conjunto": "IID",
+   "q̂": 0.7633851755205403,
+   "cobertura": 0.8986,
+   "tamaño medio": 1.55095,
+   "% singleton": 45.405,
+   "cobertura Mondrian": 0.90195,
+   "tamaño Mondrian": 1.90455
+  },
+  {
+   "modelo": "LinearSVC",
+   "conjunto": "TEST",
+   "q̂": 0.7633851755205403,
+   "cobertura": 0.897836091816025,
+   "tamaño medio": 1.6056941943229568,
+   "% singleton": 39.882228510991055,
+   "cobertura Mondrian": 0.8885744504473602,
+   "tamaño Mondrian": 1.7561029642969441
+  },
   {
    "modelo": "SVC-RBF",
    "conjunto": "IID",
@@ -1157,29 +1215,135 @@
    "% singleton": 56.98982362861962,
    "cobertura Mondrian": 0.7742189063259297,
    "tamaño Mondrian": 1.4710287854100563
-  },
-  {
-   "modelo": "HGB",
-   "conjunto": "IID",
-   "q̂": 0.3902806130447868,
-   "cobertura": 0.9507,
-   "tamaño medio": 1.0,
-   "% singleton": 100.0,
-   "cobertura Mondrian": 0.9569,
-   "tamaño Mondrian": 1.01215
-  },
-  {
-   "modelo": "HGB",
-   "conjunto": "TEST",
-   "q̂": 0.3902806130447868,
-   "cobertura": 0.7171840608295458,
-   "tamaño medio": 1.0,
-   "% singleton": 100.0,
-   "cobertura Mondrian": 0.7182774490466798,
-   "tamaño Mondrian": 1.0063745247691736
   }
  ],
  "conformal_class": [
+  {
+   "modelo": "LinearSVC",
+   "conjunto": "IID",
+   "clase": "Spruce/Fir",
+   "cobertura": 0.8916666666666667,
+   "tamaño": 1.6442424242424243,
+   "cobertura Mondrian": 0.8968181818181818,
+   "n": 6600
+  },
+  {
+   "modelo": "LinearSVC",
+   "conjunto": "IID",
+   "clase": "Lodgepole Pine",
+   "cobertura": 0.9460735087366942,
+   "tamaño": 1.449789114279976,
+   "cobertura Mondrian": 0.9046997389033943,
+   "n": 9958
+  },
+  {
+   "modelo": "LinearSVC",
+   "conjunto": "IID",
+   "clase": "Ponderosa Pine",
+   "cobertura": 0.944233206590621,
+   "tamaño": 1.6508238276299112,
+   "cobertura Mondrian": 0.8967046894803549,
+   "n": 1578
+  },
+  {
+   "modelo": "LinearSVC",
+   "conjunto": "IID",
+   "clase": "Cottonwood/Willow",
+   "cobertura": 0.6854838709677419,
+   "tamaño": 1.8548387096774193,
+   "cobertura Mondrian": 0.8790322580645161,
+   "n": 124
+  },
+  {
+   "modelo": "LinearSVC",
+   "conjunto": "IID",
+   "clase": "Aspen",
+   "cobertura": 0.2044334975369458,
+   "tamaño": 1.3522167487684729,
+   "cobertura Mondrian": 0.8990147783251231,
+   "n": 406
+  },
+  {
+   "modelo": "LinearSVC",
+   "conjunto": "IID",
+   "clase": "Douglas-fir",
+   "cobertura": 0.6787096774193548,
+   "tamaño": 1.7496774193548388,
+   "cobertura Mondrian": 0.8941935483870967,
+   "n": 775
+  },
+  {
+   "modelo": "LinearSVC",
+   "conjunto": "IID",
+   "clase": "Krummholz",
+   "cobertura": 0.8622540250447227,
+   "tamaño": 1.7710196779964222,
+   "cobertura Mondrian": 0.9463327370304114,
+   "n": 559
+  },
+  {
+   "modelo": "LinearSVC",
+   "conjunto": "TEST",
+   "clase": "Spruce/Fir",
+   "cobertura": 0.8985697474427446,
+   "tamaño": 1.7166048097522706,
+   "cobertura Mondrian": 0.9034277782806795,
+   "n": 66282
+  },
+  {
+   "modelo": "LinearSVC",
+   "conjunto": "TEST",
+   "clase": "Lodgepole Pine",
+   "cobertura": 0.923667477824005,
+   "tamaño": 1.4612763953214538,
+   "cobertura Mondrian": 0.8838841353324437,
+   "n": 63695
+  },
+  {
+   "modelo": "LinearSVC",
+   "conjunto": "TEST",
+   "clase": "Ponderosa Pine",
+   "cobertura": 0.5121951219512195,
+   "tamaño": 1.4676564156945917,
+   "cobertura Mondrian": 0.5100742311770944,
+   "n": 943
+  },
+  {
+   "modelo": "LinearSVC",
+   "conjunto": "TEST",
+   "clase": "Cottonwood/Willow",
+   "cobertura": null,
+   "tamaño": null,
+   "cobertura Mondrian": null,
+   "n": 0
+  },
+  {
+   "modelo": "LinearSVC",
+   "conjunto": "TEST",
+   "clase": "Aspen",
+   "cobertura": 0.08256880733944955,
+   "tamaño": 1.236697247706422,
+   "cobertura Mondrian": 0.8238532110091743,
+   "n": 545
+  },
+  {
+   "modelo": "LinearSVC",
+   "conjunto": "TEST",
+   "clase": "Douglas-fir",
+   "cobertura": 0.5949820788530465,
+   "tamaño": 1.8064516129032258,
+   "cobertura Mondrian": 0.8387096774193549,
+   "n": 279
+  },
+  {
+   "modelo": "LinearSVC",
+   "conjunto": "TEST",
+   "clase": "Krummholz",
+   "cobertura": 0.7999511480214949,
+   "tamaño": 1.864924279433317,
+   "cobertura Mondrian": 0.8544211040547142,
+   "n": 8188
+  },
   {
    "modelo": "SVC-RBF",
    "conjunto": "IID",
@@ -1305,132 +1469,6 @@
    "tamaño": 1.1415486077186126,
    "cobertura Mondrian": 0.8144846116267709,
    "n": 8188
-  },
-  {
-   "modelo": "HGB",
-   "conjunto": "IID",
-   "clase": "Spruce/Fir",
-   "cobertura": 0.9434848484848485,
-   "tamaño": 1.0,
-   "cobertura Mondrian": 0.9434848484848485,
-   "n": 6600
-  },
-  {
-   "modelo": "HGB",
-   "conjunto": "IID",
-   "clase": "Lodgepole Pine",
-   "cobertura": 0.9701747338823057,
-   "tamaño": 1.0,
-   "cobertura Mondrian": 0.9701747338823057,
-   "n": 9958
-  },
-  {
-   "modelo": "HGB",
-   "conjunto": "IID",
-   "clase": "Ponderosa Pine",
-   "cobertura": 0.9581749049429658,
-   "tamaño": 1.0,
-   "cobertura Mondrian": 0.9581749049429658,
-   "n": 1578
-  },
-  {
-   "modelo": "HGB",
-   "conjunto": "IID",
-   "clase": "Cottonwood/Willow",
-   "cobertura": 0.6612903225806451,
-   "tamaño": 1.0,
-   "cobertura Mondrian": 0.9516129032258065,
-   "n": 124
-  },
-  {
-   "modelo": "HGB",
-   "conjunto": "IID",
-   "clase": "Aspen",
-   "cobertura": 0.7364532019704434,
-   "tamaño": 1.0,
-   "cobertura Mondrian": 0.9310344827586207,
-   "n": 406
-  },
-  {
-   "modelo": "HGB",
-   "conjunto": "IID",
-   "clase": "Douglas-fir",
-   "cobertura": 0.9174193548387096,
-   "tamaño": 1.0,
-   "cobertura Mondrian": 0.9174193548387096,
-   "n": 775
-  },
-  {
-   "modelo": "HGB",
-   "conjunto": "IID",
-   "clase": "Krummholz",
-   "cobertura": 0.9338103756708408,
-   "tamaño": 1.0,
-   "cobertura Mondrian": 0.9499105545617174,
-   "n": 559
-  },
-  {
-   "modelo": "HGB",
-   "conjunto": "TEST",
-   "clase": "Spruce/Fir",
-   "cobertura": 0.7276787061343954,
-   "tamaño": 1.0,
-   "cobertura Mondrian": 0.7276787061343954,
-   "n": 66282
-  },
-  {
-   "modelo": "HGB",
-   "conjunto": "TEST",
-   "clase": "Lodgepole Pine",
-   "cobertura": 0.7310620927859329,
-   "tamaño": 1.0,
-   "cobertura Mondrian": 0.7310620927859329,
-   "n": 63695
-  },
-  {
-   "modelo": "HGB",
-   "conjunto": "TEST",
-   "clase": "Ponderosa Pine",
-   "cobertura": 0.23435843054082714,
-   "tamaño": 1.0,
-   "cobertura Mondrian": 0.23435843054082714,
-   "n": 943
-  },
-  {
-   "modelo": "HGB",
-   "conjunto": "TEST",
-   "clase": "Cottonwood/Willow",
-   "cobertura": null,
-   "tamaño": null,
-   "cobertura Mondrian": null,
-   "n": 0
-  },
-  {
-   "modelo": "HGB",
-   "conjunto": "TEST",
-   "clase": "Aspen",
-   "cobertura": 0.05688073394495413,
-   "tamaño": 1.0,
-   "cobertura Mondrian": 0.13027522935779817,
-   "n": 545
-  },
-  {
-   "modelo": "HGB",
-   "conjunto": "TEST",
-   "clase": "Douglas-fir",
-   "cobertura": 0.9247311827956989,
-   "tamaño": 1.0,
-   "cobertura Mondrian": 0.9247311827956989,
-   "n": 279
-  },
-  {
-   "modelo": "HGB",
-   "conjunto": "TEST",
-   "clase": "Krummholz",
-   "cobertura": 0.6167562286272594,
-   "tamaño": 1.0,
-   "cobertura Mondrian": 0.6305569125549585,
-   "n": 8188
   }
  ],
  "drift_power": [
@@ -1441,8 +1479,8 @@
    "alerta JS": 0.0,
    "alerta": 0.025,
    "PSI elevación": 0.018335830810014588,
-   "JS clases": 0.0026711730846852434,
-   "macro-F1 ventana": 0.687718529692162
+   "JS clases": 0.0028866035747703864,
+   "macro-F1 ventana": 0.5311631914875734
   },
   {
    "escenario": "elevación δ=0.1",
@@ -1451,8 +1489,8 @@
    "alerta JS": 0.0,
    "alerta": 0.275,
    "PSI elevación": 0.03405051319336491,
-   "JS clases": 0.0026150105456116133,
-   "macro-F1 ventana": 0.676836461556118
+   "JS clases": 0.0032363403769196082,
+   "macro-F1 ventana": 0.501057058886329
   },
   {
    "escenario": "elevación δ=0.25",
@@ -1461,8 +1499,8 @@
    "alerta JS": 0.0,
    "alerta": 1.0,
    "PSI elevación": 0.11261334570065232,
-   "JS clases": 0.006821243212652343,
-   "macro-F1 ventana": 0.6340525673750378
+   "JS clases": 0.010380161574301546,
+   "macro-F1 ventana": 0.5217149835619829
   },
   {
    "escenario": "elevación δ=0.5",
@@ -1471,18 +1509,18 @@
    "alerta JS": 0.0,
    "alerta": 1.0,
    "PSI elevación": 0.35604789194438136,
-   "JS clases": 0.02976928579360698,
-   "macro-F1 ventana": 0.4787795496681978
+   "JS clases": 0.03383412160025831,
+   "macro-F1 ventana": 0.47739300368824394
   },
   {
    "escenario": "cambio de priors",
    "alerta PSI": 0.325,
    "alerta KS": 1.0,
-   "alerta JS": 0.025,
+   "alerta JS": 0.0,
    "alerta": 1.0,
    "PSI elevación": 0.18111968996032235,
-   "JS clases": 0.034663130151080815,
-   "macro-F1 ventana": 0.6991555735650348
+   "JS clases": 0.029207684701497687,
+   "macro-F1 ventana": 0.5220963829204031
   },
   {
    "escenario": "bloques TEST (real)",
@@ -1491,8 +1529,8 @@
    "alerta JS": 1.0,
    "alerta": 1.0,
    "PSI elevación": 1.596153458113619,
-   "JS clases": 0.0744989649085735,
-   "macro-F1 ventana": 0.39914310991045554
+   "JS clases": 0.07000219416612871,
+   "macro-F1 ventana": 0.45237791180215725
   }
  ],
  "drift_tta": [
@@ -1544,11 +1582,11 @@
   "sd_elevation": 286.728962811729
  },
  "fit_time": {
-  "SVC-RBF": 35.2489699999569,
-  "LinearSVC": 32.395339800044894,
-  "Nyström-1000": 50.56283389998134,
-  "LogReg": 40.3256816000212,
-  "HGB": 107.94704140000977
+  "SVC-RBF": 36.06184410001151,
+  "LinearSVC": 30.535881799994968,
+  "Nyström-1000": 46.85253189993091,
+  "LogReg": 36.46016680006869,
+  "HGB": 95.09663140005432
  },
- "elapsed_min": 77.4628331349988
+ "elapsed_min": 513.9542024433322
 }

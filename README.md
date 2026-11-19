@@ -6,7 +6,7 @@ Clasificación multiclase de las 7 coberturas del conjunto **Forest CoverType (U
 **Alcance:** núcleo obligatorio (fases 0–5 y 9) más las extensiones **6** (calibración y predicción conforme) y
 **10** (monitoreo y deriva).
 
-**Dashboard desplegado:** _URL_PENDIENTE_ · API: `/health`, `/predict`, documentación en `/docs`
+**Dashboard desplegado:** <https://forest-cover-svm.onrender.com> · API: [`/health`](https://forest-cover-svm.onrender.com/health), `/predict`, documentación en [`/docs`](https://forest-cover-svm.onrender.com/docs) (plan gratuito: la primera visita puede tardar ≈ 1 min)
 
 | Entregable | Ubicación |
 |---|---|
