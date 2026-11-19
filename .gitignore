@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.ipynb_checkpoints/
+# datos: versionados por SHA-256 (config/config.yaml), no se suben a Git
+data/*
+!data/README.md
+mlruns/
+mlflow.db
+
+# ejecuciones de prueba del notebook (perfil smoke)
+notebooks/_*.ipynb

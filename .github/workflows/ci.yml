@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.lock ruff==0.11.8 mypy==1.15.0 pytest==8.3.5 pytest-cov==7.1.0 httpx==0.28.1 statsmodels==0.15.0 psutil==7.2.2 pandas-stubs==3.1.0.261029 types-PyYAML==6.0.12.20261113
+      - run: ruff check src tests app
+      - run: mypy src
+      # Las pruebas generan un modelo de juguete en una carpeta temporal (tests/conftest.py)
+      - run: pytest --cov=src --cov-fail-under=80
+
+  docker:
+    needs: quality
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t forest-api:ci .
+      - name: Smoke test
+        run: |
+          docker run -d --name api -p 8000:8000 forest-api:ci
+          for i in $(seq 1 30); do curl -fs http://localhost:8000/health && exit 0; sleep 2; done
+          docker logs api
+          exit 1

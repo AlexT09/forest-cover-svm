@@ -1,0 +1,71 @@
+# Configuración única del proyecto 6.20 (Forest CoverType).
+# Todas las cifras del informe se generan con estos valores; cambiarlos implica un nuevo protocolo.
+
+seed: 42
+
+data:
+  path: data/covtype.data.gz
+  # SHA-256 del archivo original de la UCI; el notebook se detiene si no coincide.
+  sha256: 614360d0257557dd1792834a85a1cdebfadc3c4f30b011d56afee7ffb5b15771
+
+protocol:
+  primary_metric: macro_f1          # métrica primaria (decide el modelo campeón)
+  secondary_metrics: [balanced_accuracy, mcc, log_loss]
+  # Partición de prueba: 1 de 5 pliegues de StratifiedGroupKFold sobre los bloques (≈20 % de los datos).
+  test_folds: 5
+  # Del conjunto de desarrollo se reservan, por muestreo aleatorio estratificado:
+  conformal_calibration_size: 10000  # calibración conforme (nunca entra al entrenamiento)
+  iid_test_size: 20000               # prueba "dentro de distribución" (mismos bloques que el entrenamiento)
+  # Regla de decisión fijada antes de ver la prueba:
+  #  campeón = mayor macro-F1 en validación por bloques (anidada). Si la diferencia con el
+  #  segundo no es significativa (Nadeau-Bengio, p >= 0.05), se prefiere el modelo más barato de servir.
+
+validation:
+  n_blocks: 20
+  block_features: [Elevation, Horizontal_Distance_To_Roadways, Horizontal_Distance_To_Fire_Points]
+  n_splits: 5
+  n_repeats: 3
+  sample_size: 10000
+
+scalability:
+  sizes: [2000, 5000, 10000, 20000]
+  kernels: [linear, rbf, poly]
+  eval_size: 5000
+
+approximations:
+  n_components: [100, 300, 1000]
+  n_epochs: 3
+  chunk_size: 20000
+
+multiclass:
+  sample_size: 6000
+
+tuning:
+  outer_splits: 5
+  inner_splits: 3
+  n_candidates: 60
+  svc_sample_size: 6000
+  hgb_sample_size: 20000
+  hgb_candidates: 20
+
+final:
+  svc_train_size: 20000
+  hgb_train_size: 150000
+
+evaluation:
+  bootstrap_B: 1000
+  ci_level: 0.95
+  cv_compare_sample: 10000
+
+calibration:
+  methods: [sigmoid, isotonic]
+  cv: 5
+  ece_bins: 15
+  conformal_alpha: 0.1
+
+drift:
+  window: 500
+  psi_threshold: 0.2
+  deltas: [0.0, 0.1, 0.25, 0.5]
+  n_windows: 40
+  alpha: 0.05

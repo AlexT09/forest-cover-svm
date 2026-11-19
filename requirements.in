@@ -1,0 +1,13 @@
+# Dependencias directas del servicio (API + dashboard). Versiones exactas en requirements.lock
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.2
+joblib==1.5.3
+fastapi==0.141.1
+starlette==1.6.0
+pydantic==2.13.5
+uvicorn==0.52.4
+dash==4.4.1
+dash-bootstrap-components==2.0.4
+plotly==5.24.1

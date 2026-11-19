@@ -1,0 +1,18 @@
+# Dependencias de experimentación, pruebas y calidad. Versiones exactas en requirements-dev.lock
+-r requirements.in
+pyyaml==6.0.3
+matplotlib==3.10.9
+seaborn==0.13.2
+statsmodels==0.15.0
+psutil==7.2.2
+mlflow
+nbformat==5.11.1
+nbclient==0.11.0
+ipykernel==7.3.0
+pytest
+pytest-cov
+httpx==0.28.1
+ruff
+mypy
+pandas-stubs
+types-PyYAML
