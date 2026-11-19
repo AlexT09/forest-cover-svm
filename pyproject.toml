@@ -1,7 +1,7 @@
 [project]
 name = "forest-cover-svm"
 version = "1.0.0"
-description = "Proyecto integrador 6.20: clasificación multiclase de cobertura forestal con SVM"
+description = "Clasificación multiclase de cobertura forestal a gran escala con SVM"
 requires-python = ">=3.11"
 
 [tool.pytest.ini_options]

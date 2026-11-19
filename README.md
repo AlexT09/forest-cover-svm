@@ -1,6 +1,6 @@
-# Proyecto 6.20 · Cobertura forestal con SVM: kernels, validación por bloques, incertidumbre calibrada y monitoreo
+# Clasificación multiclase de cobertura forestal a gran escala
+### Kernels, validación por bloques, incertidumbre calibrada y operación monitoreada
 
-Proyecto integrador del capítulo 6 (Máquinas de vectores de soporte) del curso *Machine Learning* (L. Rubio).
 Clasificación multiclase de las 7 coberturas del conjunto **Forest CoverType (UCI)**: 581 012 parcelas y 54 variables.
 
 **Alcance:** núcleo obligatorio (fases 0–5 y 9) más las extensiones **6** (calibración y predicción conforme) y
@@ -10,7 +10,7 @@ Clasificación multiclase de las 7 coberturas del conjunto **Forest CoverType (U
 
 | Entregable | Ubicación |
 |---|---|
-| Notebook ejecutado (flujo completo con salidas y figuras) | [`notebooks/proyecto_6_20_covertype.ipynb`](notebooks/proyecto_6_20_covertype.ipynb) |
+| Notebook ejecutado (flujo completo con salidas y figuras) | [`notebooks/clasificacion_cobertura_forestal.ipynb`](notebooks/clasificacion_cobertura_forestal.ipynb) |
 | Biblioteca modular | `src/forest/` (`features`, `validation`, `models`, `calibration`, `drift`, `api`) |
 | API FastAPI (`/health`, `/predict`) | `src/forest/api.py` |
 | Dashboard Dash/Plotly | `app/dashboard.py` (se sirve junto con la API en `app/server.py`) |
@@ -24,7 +24,7 @@ Clasificación multiclase de las 7 coberturas del conjunto **Forest CoverType (U
 forest-cover-svm/
 ├── config/config.yaml          # protocolo: particiones, semillas, tamaños, umbrales
 ├── data/                       # covtype.data.gz (no se sube a Git; SHA-256 en config.yaml)
-├── notebooks/proyecto_6_20_covertype.ipynb
+├── notebooks/clasificacion_cobertura_forestal.ipynb
 ├── src/forest/                 # biblioteca
 ├── app/dashboard.py, server.py # dashboard + servicio único (API + dashboard)
 ├── artifacts/                  # modelo calibrado, conformal.json, referencia de deriva, results.json, model_card.md

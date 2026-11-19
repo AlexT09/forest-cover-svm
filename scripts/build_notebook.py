@@ -1,4 +1,4 @@
-"""Genera notebooks/proyecto_6_20_covertype.ipynb (celdas sin ejecutar).
+"""Genera notebooks/clasificacion_cobertura_forestal.ipynb (celdas sin ejecutar).
 
 Uso:  python scripts/build_notebook.py
 Luego se ejecuta con scripts/run_notebook.py (o Jupyter: Kernel > Restart & Run All).
@@ -21,12 +21,12 @@ def code(s):
 
 # =============================================================================
 md(r"""
-# Proyecto 6.20 — Clasificación multiclase de cobertura forestal a gran escala
+# Clasificación multiclase de cobertura forestal a gran escala
 ### Kernels, validación por bloques, incertidumbre calibrada y operación monitoreada
 
-**Curso:** Machine Learning (L. Rubio) · **Capítulo 6:** Máquinas de vectores de soporte · **Conjunto:** Forest CoverType (UCI)
+**Conjunto:** Forest CoverType (UCI)
 
-Este notebook contiene el flujo completo del proyecto integrador: exploración, ingeniería de características,
+Este notebook contiene el flujo completo del proyecto: exploración, ingeniería de características,
 esquemas de validación, modelado y escalabilidad, optimización anidada, evaluación estadística, calibración y
 predicción conforme (**extensión fase 6**), artefactos de despliegue (**fase 9**) y monitoreo de deriva
 (**extensión fase 10**). Todo se ejecuta con `config/config.yaml`, semillas fijas y el entorno de `requirements-dev.lock`.
@@ -1347,6 +1347,6 @@ nb["metadata"] = {
     "kernelspec": {"display_name": "Python 3 (forest-cover)", "language": "python", "name": "python3"},
     "language_info": {"name": "python"},
 }
-out = ROOT / "notebooks" / "proyecto_6_20_covertype.ipynb"
+out = ROOT / "notebooks" / "clasificacion_cobertura_forestal.ipynb"
 nbf.write(nb, out)
 print("Notebook escrito en", out, "con", len(cells), "celdas")

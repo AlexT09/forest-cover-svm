@@ -12,7 +12,7 @@ import nbformat
 from nbclient import NotebookClient
 
 ROOT = Path(__file__).resolve().parents[1]
-src = ROOT / "notebooks" / "proyecto_6_20_covertype.ipynb"
+src = ROOT / "notebooks" / "clasificacion_cobertura_forestal.ipynb"
 profile = os.environ.get("FOREST_PROFILE", "full")
 dst = src if profile == "full" else src.with_name(f"_{profile}_{src.name}")
 

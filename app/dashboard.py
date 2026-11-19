@@ -1,4 +1,4 @@
-"""Dashboard (Dash/Plotly) del proyecto 6.20.
+"""Dashboard (Dash/Plotly) de clasificación de cobertura forestal.
 
 Pestañas: predicción por lotes (con probabilidades y conjunto conforme), monitoreo de deriva,
 resultados del notebook, tarjeta del modelo y documentación de la API.
@@ -300,14 +300,14 @@ curl -X POST {base}/predict -H "Content-Type: application/json" \\
 
 # ----------------------------------------------------------------------------- aplicación
 def create_dash(requests_pathname_prefix: str = "/", api_base: str = "") -> Dash:
-    app = Dash(__name__, requests_pathname_prefix=requests_pathname_prefix, title="Cobertura forestal · Proyecto 6.20",
+    app = Dash(__name__, requests_pathname_prefix=requests_pathname_prefix, title="Cobertura forestal · Clasificación multiclase",
                external_stylesheets=[dbc.themes.FLATLY], suppress_callback_exceptions=True)
     r = results()
     subtitle = (f"Campeón: {r.get('champion', '—')} · alternativo: {r.get('alternative', '—')} · "
                 "validación por bloques pseudo-espaciales · probabilidades calibradas · predicción conforme α = 0.1")
     app.layout = html.Div([
         dbc.Navbar(dbc.Container([
-            html.Div([html.H4("Cobertura forestal — Proyecto integrador 6.20", className="text-white mb-0"),
+            html.Div([html.H4("Clasificación multiclase de cobertura forestal", className="text-white mb-0"),
                       html.Div(subtitle, className="small text-white-50")]),
         ], fluid=True), color="primary", dark=True, className="mb-2"),
         dcc.Store(id="batch"),

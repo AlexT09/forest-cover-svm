@@ -1,4 +1,4 @@
-# Configuración única del proyecto 6.20 (Forest CoverType).
+# Configuración única del proyecto de clasificación de cobertura forestal (Forest CoverType).
 # Todas las cifras del informe se generan con estos valores; cambiarlos implica un nuevo protocolo.
 
 seed: 42
