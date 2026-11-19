@@ -1,0 +1,10 @@
+# Blueprint de Render: servicio único (API FastAPI + dashboard Dash) construido con el Dockerfile.
+# Render inyecta PORT; el Dockerfile escucha en ${PORT:-8000}. Plan gratuito: 512 MB (pico medido ≈ 220 MB).
+services:
+  - type: web
+    name: forest-cover-svm
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    autoDeploy: true

@@ -1194,8 +1194,8 @@ n_big = int(sc_.n.max())
 # ---------- PI1 ----------
 pi1 = f'''### PI1 · Escalabilidad
 - **SVM exacta.** El exponente empírico del tiempo de ajuste es **b = {f3(cx.loc["linear", "b (ajuste)"])}** (lineal),
-  **{f3(cx.loc["rbf", "b (ajuste)"])}** (RBF) y **{f3(cx.loc["poly", "b (ajuste)"])}** (polinómico), con IC 95 % que
-  incluyen el rango teórico b ∈ [2, 3] (RBF: [{f3(cx.loc["rbf", "IC95 inf"])}, {f3(cx.loc["rbf", "IC95 sup"])}]).
+  **{f3(cx.loc["rbf", "b (ajuste)"])}** (RBF) y **{f3(cx.loc["poly", "b (ajuste)"])}** (polinómico); el IC 95 % del RBF,
+  [{f3(cx.loc["rbf", "IC95 inf"])}, {f3(cx.loc["rbf", "IC95 sup"])}], {"es compatible con" if cx.loc["rbf", "IC95 sup"] >= 2 and cx.loc["rbf", "IC95 inf"] <= 3 else "queda fuera de"} el rango teórico b ∈ [2, 3].
   La predicción escala ≈ linealmente (b ≈ {f3(cx.loc["rbf", "b (predicción)"])}), porque su costo es proporcional al número de vectores de soporte.
   Con n = {n_big:,} la SVC-RBF ya tarda {big.loc["rbf", "fit_s"]:.1f} s y ocupa {big.loc["rbf", "fit_mem_mb"]:.0f} MB en el ajuste:
   extrapolar a las {R["partitions"]["DEV-TRAIN"]:,} filas de DEV-TRAIN (×{R["partitions"]["DEV-TRAIN"] / n_big:.0f}) con b ≈ 2 supone

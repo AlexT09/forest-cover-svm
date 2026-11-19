@@ -56,13 +56,15 @@ Las ejecuciones quedan registradas en MLflow (`mlflow ui --backend-store-uri sql
 - **Campeón:** mayor macro-F1 en validación anidada 5×3 por bloques; si la diferencia con el segundo no es significativa
   (t corregida de Nadeau–Bengio, p ≥ 0.05), el más barato de servir (latencia de predicción). Solo con datos de desarrollo.
 
-## Despliegue (Railway)
-El `Dockerfile` construye un servicio único (API + dashboard) que escucha en `$PORT`:
+## Despliegue (Render)
+El `Dockerfile` construye un servicio único (API + dashboard) que escucha en `$PORT`; `render.yaml` lo declara como
+servicio web gratuito con comprobación de salud en `/health`.
 
-```bash
-railway init && railway up && railway domain
-railway variables --set PUBLIC_URL=https://<dominio>   # URL que muestra la pestaña "API" del dashboard
-```
+1. En [render.com](https://render.com) → **New → Blueprint** → elegir este repositorio (lee `render.yaml`).
+2. Al terminar la construcción, el servicio queda en `https://<nombre>.onrender.com` (dashboard en `/`, API en `/docs`).
+3. Opcional: variable `PUBLIC_URL=https://<nombre>.onrender.com` para que la pestaña "API" del dashboard muestre la URL real.
+
+En el plan gratuito el servicio se suspende tras 15 min sin tráfico; la primera visita tarda ≈ 1 min en despertarlo.
 
 ## Limitaciones declaradas
 Los bloques son pseudo-espaciales, porque el conjunto no trae coordenadas. La SVM exacta se entrena con una submuestra por su costo ≈ cuadrático. La memoria del equipo de desarrollo (7 GB) limita algunos tamaños, documentados en `config/config.yaml`.

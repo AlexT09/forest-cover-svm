@@ -1,0 +1,1554 @@
+{
+ "profile": "full",
+ "class_counts": {
+  "1": 211840,
+  "2": 283301,
+  "3": 35754,
+  "4": 2747,
+  "5": 9493,
+  "6": 17367,
+  "7": 20510
+ },
+ "partitions": {
+  "DEV-TRAIN": 411080,
+  "CAL (conformal)": 10000,
+  "IID (prueba aleatoria)": 20000,
+  "TEST (bloques)": 139932
+ },
+ "test_blocks": [
+  3,
+  5,
+  7,
+  9,
+  10
+ ],
+ "validation_schemes": [
+  {
+   "model": "HGB",
+   "scheme": "UCI",
+   "mean": 0.856881457055379,
+   "std": null
+  },
+  {
+   "model": "HGB",
+   "scheme": "aleatorio",
+   "mean": 0.7121140872540448,
+   "std": 0.026327800332761237
+  },
+  {
+   "model": "HGB",
+   "scheme": "bloques",
+   "mean": 0.35846441119215444,
+   "std": 0.10500924675804736
+  },
+  {
+   "model": "LogReg",
+   "scheme": "UCI",
+   "mean": 0.7170854472149406,
+   "std": null
+  },
+  {
+   "model": "LogReg",
+   "scheme": "aleatorio",
+   "mean": 0.5341795315563738,
+   "std": 0.03098088590216539
+  },
+  {
+   "model": "LogReg",
+   "scheme": "bloques",
+   "mean": 0.395620968285145,
+   "std": 0.11513363356374892
+  },
+  {
+   "model": "SVC-RBF",
+   "scheme": "UCI",
+   "mean": 0.826487939754602,
+   "std": null
+  },
+  {
+   "model": "SVC-RBF",
+   "scheme": "aleatorio",
+   "mean": 0.6746541188554259,
+   "std": 0.024811869577966755
+  },
+  {
+   "model": "SVC-RBF",
+   "scheme": "bloques",
+   "mean": 0.4126528202118453,
+   "std": 0.051712513354971006
+  }
+ ],
+ "optimism": [
+  {
+   "modelo": "SVC-RBF",
+   "macro-F1 aleatorio": 0.674654118855426,
+   "macro-F1 bloques": 0.4126528202118453,
+   "Δ (optimismo)": 0.26200129864358074,
+   "IC95 inf": 0.19277503676325397,
+   "IC95 sup": 0.3312275605239075,
+   "optimismo relativo %": 63.491944271476456
+  },
+  {
+   "modelo": "LogReg",
+   "macro-F1 aleatorio": 0.5341795315563738,
+   "macro-F1 bloques": 0.3956209682851451,
+   "Δ (optimismo)": 0.13855856327122867,
+   "IC95 inf": -0.005343626460329237,
+   "IC95 sup": 0.2824607530027866,
+   "optimismo relativo %": 35.023058527919616
+  },
+  {
+   "modelo": "HGB",
+   "macro-F1 aleatorio": 0.7121140872540447,
+   "macro-F1 bloques": 0.3584644111921544,
+   "Δ (optimismo)": 0.3536496760618903,
+   "IC95 inf": 0.22298721130920315,
+   "IC95 sup": 0.4843121408145774,
+   "optimismo relativo %": 98.65684431147527
+  }
+ ],
+ "scalability": [
+  {
+   "kernel": "linear",
+   "n": 2000,
+   "fit_s": 0.23495339998044074,
+   "fit_mem_mb": 12.51171875,
+   "pred_s": 0.24203550000675023,
+   "n_sv": 1328,
+   "macro_f1": 0.3227514318712141,
+   "balanced_accuracy": 0.3106103902592312,
+   "mcc": 0.3970957710190702,
+   "accuracy": 0.714
+  },
+  {
+   "kernel": "linear",
+   "n": 5000,
+   "fit_s": 1.0595475999871269,
+   "fit_mem_mb": 26.52734375,
+   "pred_s": 0.45272220007609576,
+   "n_sv": 3283,
+   "macro_f1": 0.32391972941745323,
+   "balanced_accuracy": 0.30398101626274127,
+   "mcc": 0.42181800851460854,
+   "accuracy": 0.7252
+  },
+  {
+   "kernel": "linear",
+   "n": 10000,
+   "fit_s": 4.849580700043589,
+   "fit_mem_mb": 138.7578125,
+   "pred_s": 0.8943387999897823,
+   "n_sv": 6465,
+   "macro_f1": 0.3271053395451445,
+   "balanced_accuracy": 0.3005424048808702,
+   "mcc": 0.43087987567681635,
+   "accuracy": 0.7294
+  },
+  {
+   "kernel": "linear",
+   "n": 20000,
+   "fit_s": 28.53668900008779,
+   "fit_mem_mb": 376.34375,
+   "pred_s": 3.0915246999356896,
+   "n_sv": 12768,
+   "macro_f1": 0.3429128197920297,
+   "balanced_accuracy": 0.3197418065452386,
+   "mcc": 0.4372821248372006,
+   "accuracy": 0.732
+  },
+  {
+   "kernel": "rbf",
+   "n": 2000,
+   "fit_s": 0.151132500031963,
+   "fit_mem_mb": 1.57421875,
+   "pred_s": 0.7222597999498248,
+   "n_sv": 1471,
+   "macro_f1": 0.29006673982934267,
+   "balanced_accuracy": 0.2714934754461336,
+   "mcc": 0.3738281846536647,
+   "accuracy": 0.6988
+  },
+  {
+   "kernel": "rbf",
+   "n": 5000,
+   "fit_s": 0.7211801999947056,
+   "fit_mem_mb": 3.7265625,
+   "pred_s": 1.653267899993807,
+   "n_sv": 3330,
+   "macro_f1": 0.2832751296313667,
+   "balanced_accuracy": 0.26751819400306287,
+   "mcc": 0.38483367690595877,
+   "accuracy": 0.704
+  },
+  {
+   "kernel": "rbf",
+   "n": 10000,
+   "fit_s": 3.7770676999352872,
+   "fit_mem_mb": 30.17578125,
+   "pred_s": 3.1071773999137804,
+   "n_sv": 6205,
+   "macro_f1": 0.28813449953053843,
+   "balanced_accuracy": 0.2681211963670959,
+   "mcc": 0.3859822807384742,
+   "accuracy": 0.7038
+  },
+  {
+   "kernel": "rbf",
+   "n": 20000,
+   "fit_s": 20.887006300035864,
+   "fit_mem_mb": 361.01953125,
+   "pred_s": 6.110403100028634,
+   "n_sv": 11589,
+   "macro_f1": 0.2904829519223373,
+   "balanced_accuracy": 0.2703914195357941,
+   "mcc": 0.36592108133355655,
+   "accuracy": 0.6944
+  },
+  {
+   "kernel": "poly",
+   "n": 2000,
+   "fit_s": 0.11923640000168234,
+   "fit_mem_mb": 0.09765625,
+   "pred_s": 0.2241374000441283,
+   "n_sv": 1487,
+   "macro_f1": 0.2672228496813486,
+   "balanced_accuracy": 0.2501282163266697,
+   "mcc": 0.3148135974416387,
+   "accuracy": 0.679
+  },
+  {
+   "kernel": "poly",
+   "n": 5000,
+   "fit_s": 0.6840762000065297,
+   "fit_mem_mb": 3.3203125,
+   "pred_s": 0.4956338000483811,
+   "n_sv": 3311,
+   "macro_f1": 0.2868773656249388,
+   "balanced_accuracy": 0.2667468032257468,
+   "mcc": 0.33773651660712833,
+   "accuracy": 0.6882
+  },
+  {
+   "kernel": "poly",
+   "n": 10000,
+   "fit_s": 3.1841360999969766,
+   "fit_mem_mb": 21.4921875,
+   "pred_s": 1.4791571999667212,
+   "n_sv": 6122,
+   "macro_f1": 0.2922753793729335,
+   "balanced_accuracy": 0.27310631218377196,
+   "mcc": 0.33049547894485115,
+   "accuracy": 0.683
+  },
+  {
+   "kernel": "poly",
+   "n": 20000,
+   "fit_s": 21.367005600011908,
+   "fit_mem_mb": 410.6484375,
+   "pred_s": 2.5371436999412253,
+   "n_sv": 11404,
+   "macro_f1": 0.29394162299310095,
+   "balanced_accuracy": 0.2749155527375618,
+   "mcc": 0.3357296173775742,
+   "accuracy": 0.6842
+  }
+ ],
+ "complexity_fit": [
+  {
+   "kernel": "linear",
+   "b (ajuste)": 2.0794732254552306,
+   "IC95 inf": 1.4198091137733186,
+   "IC95 sup": 2.7391373371371426,
+   "b (predicción)": 1.0794845638726804
+  },
+  {
+   "kernel": "poly",
+   "b (ajuste)": 2.2377960405869333,
+   "IC95 inf": 1.650136591666119,
+   "IC95 sup": 2.8254554895077475,
+   "b (predicción)": 1.0975120358655353
+  },
+  {
+   "kernel": "rbf",
+   "b (ajuste)": 2.1490528494384034,
+   "IC95 inf": 1.550761067658749,
+   "IC95 sup": 2.7473446312180574,
+   "b (predicción)": 0.9249038604286182
+  }
+ ],
+ "approximations": [
+  {
+   "modelo": "Nyström m=100 + SVM lineal",
+   "familia": "aproximación",
+   "n_train": 333974,
+   "fit_s": 5.331330400076695,
+   "fit_mem_mb": 228.44921875,
+   "pred_s": 0.02556980005465448,
+   "macro_f1": 0.2590649465558438,
+   "balanced_accuracy": 0.28981895079247905,
+   "mcc": 0.33684525913244767,
+   "accuracy": 0.684
+  },
+  {
+   "modelo": "Nyström m=300 + SVM lineal",
+   "familia": "aproximación",
+   "n_train": 333974,
+   "fit_s": 11.905294799944386,
+   "fit_mem_mb": 228.4296875,
+   "pred_s": 0.0524957999587059,
+   "macro_f1": 0.29437707773114835,
+   "balanced_accuracy": 0.31982638376718825,
+   "mcc": 0.32318608279897393,
+   "accuracy": 0.6798
+  },
+  {
+   "modelo": "Nyström m=1000 + SVM lineal",
+   "familia": "aproximación",
+   "n_train": 333974,
+   "fit_s": 46.15764909994323,
+   "fit_mem_mb": 268.90234375,
+   "pred_s": 0.36550079996231943,
+   "macro_f1": 0.48465732364026853,
+   "balanced_accuracy": 0.5022391456345087,
+   "mcc": 0.348196817144389,
+   "accuracy": 0.6842
+  },
+  {
+   "modelo": "RFF m=100 + SVM lineal",
+   "familia": "aproximación",
+   "n_train": 333974,
+   "fit_s": 7.997268700040877,
+   "fit_mem_mb": 290.50390625,
+   "pred_s": 0.05005129997152835,
+   "macro_f1": 0.18845810518067072,
+   "balanced_accuracy": 0.26911590878651814,
+   "mcc": 0.15837269733393236,
+   "accuracy": 0.6144
+  },
+  {
+   "modelo": "RFF m=300 + SVM lineal",
+   "familia": "aproximación",
+   "n_train": 333974,
+   "fit_s": 7.62842029996682,
+   "fit_mem_mb": 275.27734375,
+   "pred_s": 0.017208200064487755,
+   "macro_f1": 0.27240199365755463,
+   "balanced_accuracy": 0.2672443809606521,
+   "mcc": 0.34796830241139054,
+   "accuracy": 0.691
+  },
+  {
+   "modelo": "RFF m=1000 + SVM lineal",
+   "familia": "aproximación",
+   "n_train": 333974,
+   "fit_s": 17.441678400035016,
+   "fit_mem_mb": 246.7109375,
+   "pred_s": 0.03795630007516593,
+   "macro_f1": 0.4032686946651424,
+   "balanced_accuracy": 0.4796698967007484,
+   "mcc": 0.3040727868513673,
+   "accuracy": 0.6706
+  },
+  {
+   "modelo": "LogReg multinomial",
+   "familia": "referencia",
+   "n_train": 333974,
+   "fit_s": 29.932954099960625,
+   "fit_mem_mb": 394.8203125,
+   "pred_s": 0.0184976999880746,
+   "macro_f1": 0.3338996716563343,
+   "balanced_accuracy": 0.3074986711027056,
+   "mcc": 0.4319003487326966,
+   "accuracy": 0.7296
+  },
+  {
+   "modelo": "HGB",
+   "familia": "referencia",
+   "n_train": 333974,
+   "fit_s": 116.33648589998484,
+   "fit_mem_mb": 512.91015625,
+   "pred_s": 0.3787245999556035,
+   "macro_f1": 0.5904751889860104,
+   "balanced_accuracy": 0.5180386350544882,
+   "mcc": 0.40590699467650027,
+   "accuracy": 0.7112
+  },
+  {
+   "modelo": "SVC-RBF exacta n=20000",
+   "familia": "SVM exacta",
+   "n_train": 20000,
+   "fit_s": 20.887006300035864,
+   "fit_mem_mb": 361.01953125,
+   "pred_s": 6.110403100028634,
+   "macro_f1": 0.2904829519223373,
+   "balanced_accuracy": 0.2703914195357941,
+   "mcc": 0.36592108133355655,
+   "accuracy": 0.6944
+  }
+ ],
+ "multiclass": [
+  {
+   "estrategia": "OvO · sin pesos",
+   "tiempo_s": 6.359823499922641,
+   "macro_f1": 0.43872055948558275,
+   "balanced_accuracy": 0.4074924786715255,
+   "mcc": 0.4481462112498842,
+   "accuracy": 0.6563333333333333
+  },
+  {
+   "estrategia": "OvO · balanced",
+   "tiempo_s": 6.0310598000651225,
+   "macro_f1": 0.4428185807871482,
+   "balanced_accuracy": 0.44527835202183486,
+   "mcc": 0.4436925623316835,
+   "accuracy": 0.6358333333333334
+  },
+  {
+   "estrategia": "OvR · sin pesos",
+   "tiempo_s": 14.246488599921577,
+   "macro_f1": 0.40672356184509184,
+   "balanced_accuracy": 0.3865427221395435,
+   "mcc": 0.4469710247074727,
+   "accuracy": 0.6556666666666666
+  },
+  {
+   "estrategia": "OvR · balanced",
+   "tiempo_s": 14.297693900065497,
+   "macro_f1": 0.4129761506730579,
+   "balanced_accuracy": 0.40656076655967405,
+   "mcc": 0.44442152419422903,
+   "accuracy": 0.6448333333333334
+  }
+ ],
+ "nested": [
+  {
+   "modelo": "LinearSVC",
+   "pliegue": 0,
+   "macro_f1": 0.2816898602039809,
+   "balanced_accuracy": 0.3656036085940738,
+   "mcc": 0.3086955669258635,
+   "accuracy": 0.48056537102473496,
+   "inner_best": 0.40083792903831705,
+   "tiempo_s": 6.677704300032929
+  },
+  {
+   "modelo": "LinearSVC",
+   "pliegue": 1,
+   "macro_f1": 0.4288794630746616,
+   "balanced_accuracy": 0.4256019621404236,
+   "mcc": 0.30483521280736814,
+   "accuracy": 0.6208267090620032,
+   "inner_best": 0.3904622339898425,
+   "tiempo_s": 1.2613459998974577
+  },
+  {
+   "modelo": "LinearSVC",
+   "pliegue": 2,
+   "macro_f1": 0.39084354101494867,
+   "balanced_accuracy": 0.4676979912785539,
+   "mcc": 0.34534527978865653,
+   "accuracy": 0.6380165289256199,
+   "inner_best": 0.352120554029781,
+   "tiempo_s": 1.159970499924384
+  },
+  {
+   "modelo": "LinearSVC",
+   "pliegue": 3,
+   "macro_f1": 0.33172369249630357,
+   "balanced_accuracy": 0.3584768855200318,
+   "mcc": 0.4018711490356009,
+   "accuracy": 0.7351778656126482,
+   "inner_best": 0.33765874550965247,
+   "tiempo_s": 1.099600699963048
+  },
+  {
+   "modelo": "LinearSVC",
+   "pliegue": 4,
+   "macro_f1": 0.43720473326634374,
+   "balanced_accuracy": 0.4373567404817405,
+   "mcc": 0.42027856525760804,
+   "accuracy": 0.7224669603524229,
+   "inner_best": 0.32918356234027385,
+   "tiempo_s": 1.0922772000776604
+  },
+  {
+   "modelo": "SVC-RBF",
+   "pliegue": 0,
+   "macro_f1": 0.32477422487376756,
+   "balanced_accuracy": 0.40028826862732236,
+   "mcc": 0.3481051359141765,
+   "accuracy": 0.5035335689045937,
+   "inner_best": 0.3531192711363185,
+   "tiempo_s": 6.224829000071622
+  },
+  {
+   "modelo": "SVC-RBF",
+   "pliegue": 1,
+   "macro_f1": 0.4075882034623118,
+   "balanced_accuracy": 0.38505789082712155,
+   "mcc": 0.3362314171979909,
+   "accuracy": 0.6518282988871225,
+   "inner_best": 0.3204455288594571,
+   "tiempo_s": 6.522846599924378
+  },
+  {
+   "modelo": "SVC-RBF",
+   "pliegue": 2,
+   "macro_f1": 0.5380652168501395,
+   "balanced_accuracy": 0.49215452872741877,
+   "mcc": 0.3320767795629401,
+   "accuracy": 0.6239669421487604,
+   "inner_best": 0.3483448203000758,
+   "tiempo_s": 6.399918500101194
+  },
+  {
+   "modelo": "SVC-RBF",
+   "pliegue": 3,
+   "macro_f1": 0.35292186889708166,
+   "balanced_accuracy": 0.3501497517924483,
+   "mcc": 0.37648708038226175,
+   "accuracy": 0.724901185770751,
+   "inner_best": 0.39031731973393874,
+   "tiempo_s": 6.277582700015046
+  },
+  {
+   "modelo": "SVC-RBF",
+   "pliegue": 4,
+   "macro_f1": 0.40902017561377074,
+   "balanced_accuracy": 0.4077222545972546,
+   "mcc": 0.4362361186341583,
+   "accuracy": 0.7295154185022027,
+   "inner_best": 0.3509323539420193,
+   "tiempo_s": 6.459909799974412
+  },
+  {
+   "modelo": "HGB",
+   "pliegue": 0,
+   "macro_f1": 0.2804576721926414,
+   "balanced_accuracy": 0.3362322498438179,
+   "mcc": 0.32695838212502826,
+   "accuracy": 0.43716104692289554,
+   "inner_best": 0.288447272217764,
+   "tiempo_s": 14.915857200045139
+  },
+  {
+   "modelo": "HGB",
+   "pliegue": 1,
+   "macro_f1": 0.3104813311502169,
+   "balanced_accuracy": 0.3017919235324486,
+   "mcc": 0.45221863469731344,
+   "accuracy": 0.7160106254527892,
+   "inner_best": 0.35003418075702625,
+   "tiempo_s": 45.54237949999515
+  },
+  {
+   "modelo": "HGB",
+   "pliegue": 2,
+   "macro_f1": 0.26583877053514554,
+   "balanced_accuracy": 0.25857468604883616,
+   "mcc": 0.3873294589910057,
+   "accuracy": 0.667314702308627,
+   "inner_best": 0.3867341931696728,
+   "tiempo_s": 34.98666129994672
+  },
+  {
+   "modelo": "HGB",
+   "pliegue": 3,
+   "macro_f1": 0.4500812615441829,
+   "balanced_accuracy": 0.5396575755183277,
+   "mcc": 0.4599215332318333,
+   "accuracy": 0.7470899470899471,
+   "inner_best": 0.365481149893828,
+   "tiempo_s": 32.31633649999276
+  },
+  {
+   "modelo": "HGB",
+   "pliegue": 4,
+   "macro_f1": 0.4093539701851157,
+   "balanced_accuracy": 0.39760807011014593,
+   "mcc": 0.4025360210017414,
+   "accuracy": 0.7010475423045931,
+   "inner_best": 0.2928481204984876,
+   "tiempo_s": 30.866194100002758
+  }
+ ],
+ "best_params": {
+  "LinearSVC": {
+   "C": 100.0
+  },
+  "SVC-RBF": {
+   "C": 206.5142557895921,
+   "gamma": 0.011756010900231853
+  },
+  "HGB": {
+   "l2_regularization": 0.017654048052495083,
+   "learning_rate": 0.09935489664217143,
+   "max_leaf_nodes": 120,
+   "min_samples_leaf": 13
+  }
+ },
+ "champion": "SVC-RBF",
+ "alternative": "HGB",
+ "test_metrics": [
+  {
+   "modelo": "HGB",
+   "macro-F1 TEST": 0.4880802954412053,
+   "bal.acc TEST": 0.5823416660900355,
+   "MCC TEST": 0.497035502701087,
+   "exactitud TEST": 0.7102950004287797,
+   "AUC macro": 0.9175394129614953,
+   "AUC micro": 0.9562491882745835,
+   "log-loss TEST": 1.1449550319937405,
+   "macro-F1 IID": 0.9202188497010918,
+   "brecha IID−TEST": 0.4321385542598865,
+   "ajuste s": 107.94704140000977,
+   "pred s": 13.529637499945238
+  },
+  {
+   "modelo": "LinearSVC",
+   "macro-F1 TEST": 0.4406513961105471,
+   "bal.acc TEST": 0.4328051753318645,
+   "MCC TEST": 0.4424756016194781,
+   "exactitud TEST": 0.6799445444930394,
+   "AUC macro": 0.8939888419989722,
+   "AUC micro": 0.9483375041224084,
+   "log-loss TEST": null,
+   "macro-F1 IID": 0.4995270476864044,
+   "brecha IID−TEST": 0.05887565157585728,
+   "ajuste s": 32.395339800044894,
+   "pred s": 0.21602039993740618
+  },
+  {
+   "modelo": "Nyström-1000",
+   "macro-F1 TEST": 0.4381828653785331,
+   "bal.acc TEST": 0.474789092936007,
+   "MCC TEST": 0.42276208776466145,
+   "exactitud TEST": 0.6593559729011234,
+   "AUC macro": 0.8849566574857933,
+   "AUC micro": 0.9312280386449328,
+   "log-loss TEST": null,
+   "macro-F1 IID": 0.6888952126754841,
+   "brecha IID−TEST": 0.250712347296951,
+   "ajuste s": 50.56283389998134,
+   "pred s": 5.721850999980234
+  },
+  {
+   "modelo": "SVC-RBF",
+   "macro-F1 TEST": 0.40334506084215,
+   "bal.acc TEST": 0.4561260003010474,
+   "MCC TEST": 0.4156938821098323,
+   "exactitud TEST": 0.6568976359946259,
+   "AUC macro": 0.8699121760462067,
+   "AUC micro": 0.9444303937491927,
+   "log-loss TEST": null,
+   "macro-F1 IID": 0.696672133554702,
+   "brecha IID−TEST": 0.29332707271255204,
+   "ajuste s": 35.2489699999569,
+   "pred s": 180.50209580000956
+  },
+  {
+   "modelo": "LogReg",
+   "macro-F1 TEST": 0.39975498890728206,
+   "bal.acc TEST": 0.4360789181549942,
+   "MCC TEST": 0.43822576854147727,
+   "exactitud TEST": 0.670482805934311,
+   "AUC macro": 0.900240973337035,
+   "AUC micro": 0.94844903999625,
+   "log-loss TEST": 0.7655524658595674,
+   "macro-F1 IID": 0.5610427218220313,
+   "brecha IID−TEST": 0.16128773291474924,
+   "ajuste s": 40.3256816000212,
+   "pred s": 0.15317040006630123
+  }
+ ],
+ "test_ci": [
+  {
+   "metric": "macro_f1",
+   "estimate": 0.34572433786469997,
+   "ci_low": 0.3394049864220396,
+   "ci_high": 0.3517258756152205,
+   "modelo": "SVC-RBF"
+  },
+  {
+   "metric": "balanced_accuracy",
+   "estimate": 0.4561260003010474,
+   "ci_low": 0.44478528498832887,
+   "ci_high": 0.4670600127738524,
+   "modelo": "SVC-RBF"
+  },
+  {
+   "metric": "accuracy",
+   "estimate": 0.6568976359946259,
+   "ci_low": 0.6545107623702942,
+   "ci_high": 0.6590988837435326,
+   "modelo": "SVC-RBF"
+  },
+  {
+   "metric": "macro_f1",
+   "estimate": 0.37770119666618324,
+   "ci_low": 0.36883225214559007,
+   "ci_high": 0.3859362067862276,
+   "modelo": "LinearSVC"
+  },
+  {
+   "metric": "balanced_accuracy",
+   "estimate": 0.4328051753318645,
+   "ci_low": 0.42499939850509527,
+   "ci_high": 0.4399397463732951,
+   "modelo": "LinearSVC"
+  },
+  {
+   "metric": "accuracy",
+   "estimate": 0.6799445444930394,
+   "ci_low": 0.6772923634336678,
+   "ci_high": 0.682203141525884,
+   "modelo": "LinearSVC"
+  },
+  {
+   "metric": "macro_f1",
+   "estimate": 0.3755853131815998,
+   "ci_low": 0.3680573649248259,
+   "ci_high": 0.383203146713499,
+   "modelo": "Nyström-1000"
+  },
+  {
+   "metric": "balanced_accuracy",
+   "estimate": 0.474789092936007,
+   "ci_low": 0.4636451612268531,
+   "ci_high": 0.48653555351919797,
+   "modelo": "Nyström-1000"
+  },
+  {
+   "metric": "accuracy",
+   "estimate": 0.6593559729011234,
+   "ci_low": 0.6567543521138839,
+   "ci_high": 0.6617714318383214,
+   "modelo": "Nyström-1000"
+  },
+  {
+   "metric": "macro_f1",
+   "estimate": 0.3426471333490989,
+   "ci_low": 0.33673641650677094,
+   "ci_high": 0.34791708525053466,
+   "modelo": "LogReg"
+  },
+  {
+   "metric": "balanced_accuracy",
+   "estimate": 0.4360789181549942,
+   "ci_low": 0.4265437531869994,
+   "ci_high": 0.4446614853077898,
+   "modelo": "LogReg"
+  },
+  {
+   "metric": "accuracy",
+   "estimate": 0.670482805934311,
+   "ci_low": 0.6678522425177943,
+   "ci_high": 0.6728485978904039,
+   "modelo": "LogReg"
+  },
+  {
+   "metric": "macro_f1",
+   "estimate": 0.4183545389496045,
+   "ci_low": 0.4099458954669701,
+   "ci_high": 0.42621258225633685,
+   "modelo": "HGB"
+  },
+  {
+   "metric": "balanced_accuracy",
+   "estimate": 0.5823416660900355,
+   "ci_low": 0.574553805265483,
+   "ci_high": 0.5903833940845933,
+   "modelo": "HGB"
+  },
+  {
+   "metric": "accuracy",
+   "estimate": 0.7102950004287797,
+   "ci_low": 0.7078936554898093,
+   "ci_high": 0.7126967026841609,
+   "modelo": "HGB"
+  }
+ ],
+ "recall_per_class": [
+  {
+   "modelo": "SVC-RBF",
+   "Spruce/Fir": 0.594475121450771,
+   "Lodgepole Pine": 0.7281105267289426,
+   "Ponderosa Pine": 0.26935312831389185,
+   "Cottonwood/Willow": 0.0,
+   "Aspen": 0.0,
+   "Douglas-fir": 0.44086021505376344,
+   "Krummholz": 0.7039570102589154
+  },
+  {
+   "modelo": "LinearSVC",
+   "Spruce/Fir": 0.6142542470052201,
+   "Lodgepole Pine": 0.7653190988303634,
+   "Ponderosa Pine": 0.5090137857900318,
+   "Cottonwood/Willow": 0.0,
+   "Aspen": 0.014678899082568808,
+   "Douglas-fir": 0.06093189964157706,
+   "Krummholz": 0.6326331216414265
+  },
+  {
+   "modelo": "Nyström-1000",
+   "Spruce/Fir": 0.6155819076068918,
+   "Lodgepole Pine": 0.7095062406782322,
+   "Ponderosa Pine": 0.32237539766702017,
+   "Cottonwood/Willow": 0.0,
+   "Aspen": 0.005504587155963303,
+   "Douglas-fir": 0.4838709677419355,
+   "Krummholz": 0.711895456765999
+  },
+  {
+   "modelo": "LogReg",
+   "Spruce/Fir": 0.614314595214387,
+   "Lodgepole Pine": 0.7339979590234712,
+   "Ponderosa Pine": 0.3138918345705196,
+   "Cottonwood/Willow": 0.0,
+   "Aspen": 0.0,
+   "Douglas-fir": 0.2222222222222222,
+   "Krummholz": 0.732046897899365
+  },
+  {
+   "modelo": "HGB",
+   "Spruce/Fir": 0.7055761745270209,
+   "Lodgepole Pine": 0.7291310149933276,
+   "Ponderosa Pine": 0.35949098621421,
+   "Cottonwood/Willow": 0.0,
+   "Aspen": 0.06972477064220184,
+   "Douglas-fir": 0.953405017921147,
+   "Krummholz": 0.6767220322423058
+  }
+ ],
+ "confusion": {
+  "SVC-RBF": [
+   [
+    0.5945,
+    0.2648,
+    0.0,
+    0.0,
+    0.0029,
+    0.0066,
+    0.1312
+   ],
+   [
+    0.2554,
+    0.7281,
+    0.0008,
+    0.0,
+    0.0011,
+    0.0089,
+    0.0057
+   ],
+   [
+    0.0,
+    0.7052,
+    0.2694,
+    0.0,
+    0.0,
+    0.0255,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0312,
+    0.9248,
+    0.0404,
+    0.0,
+    0.0,
+    0.0037,
+    0.0
+   ],
+   [
+    0.0,
+    0.4982,
+    0.0609,
+    0.0,
+    0.0,
+    0.4409,
+    0.0
+   ],
+   [
+    0.2722,
+    0.0238,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.704
+   ]
+  ],
+  "HGB": [
+   [
+    0.7056,
+    0.1953,
+    0.0002,
+    0.0,
+    0.0024,
+    0.0063,
+    0.0902
+   ],
+   [
+    0.2602,
+    0.7291,
+    0.0022,
+    0.0,
+    0.0007,
+    0.0072,
+    0.0006
+   ],
+   [
+    0.0,
+    0.5461,
+    0.3595,
+    0.0,
+    0.0,
+    0.0944,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0239,
+    0.8422,
+    0.0239,
+    0.0,
+    0.0697,
+    0.0404,
+    0.0
+   ],
+   [
+    0.0,
+    0.0323,
+    0.0143,
+    0.0,
+    0.0,
+    0.9534,
+    0.0
+   ],
+   [
+    0.3141,
+    0.0092,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.6767
+   ]
+  ]
+ },
+ "nadeau_bengio": [
+  {
+   "A": "HGB",
+   "B": "SVC-RBF",
+   "Δ macro-F1 medio": -0.054188409019690846,
+   "t corregida": -0.9251762181245939,
+   "p": 0.37054759150063477,
+   "d_z": -0.5206257398087293,
+   "k": 15
+  },
+  {
+   "A": "SVC-RBF",
+   "B": "LogReg",
+   "Δ macro-F1 medio": 0.01703185192670027,
+   "t corregida": 0.24061303536881778,
+   "p": 0.813342839286213,
+   "d_z": 0.1354005184011816,
+   "k": 15
+  },
+  {
+   "A": "HGB",
+   "B": "LogReg",
+   "Δ macro-F1 medio": -0.03715655709299059,
+   "t corregida": -0.9513206127813155,
+   "p": 0.3575775780783609,
+   "d_z": -0.5353380125015991,
+   "k": 15
+  }
+ ],
+ "mcnemar": [
+  {
+   "A": "SVC-RBF",
+   "B": "HGB",
+   "n_A_ok_B_fail": 8605,
+   "n_A_fail_B_ok": 16077,
+   "chi2": 2261.3986305809904,
+   "p_value": 0.0,
+   "odds_ratio": 0.5352511273518893,
+   "Δ macro-F1": -0.07263020108490453,
+   "IC95 Δ inf": -0.08027735387334625,
+   "IC95 Δ sup": -0.065395028715161
+  },
+  {
+   "A": "SVC-RBF",
+   "B": "Nyström-1000",
+   "n_A_ok_B_fail": 9669,
+   "n_A_fail_B_ok": 10013,
+   "chi2": 5.977492124784066,
+   "p_value": 0.014489591558500206,
+   "odds_ratio": 0.9656463773905228,
+   "Δ macro-F1": -0.02986097531689985,
+   "IC95 Δ inf": -0.0364799269820598,
+   "IC95 Δ sup": -0.023723300082680115
+  },
+  {
+   "A": "Nyström-1000",
+   "B": "LinearSVC",
+   "n_A_ok_B_fail": 13920,
+   "n_A_fail_B_ok": 16801,
+   "chi2": 269.991211223593,
+   "p_value": 1.1397897007922018e-60,
+   "odds_ratio": 0.8285272148320091,
+   "Δ macro-F1": -0.002115883484583414,
+   "IC95 Δ inf": -0.012867479162385894,
+   "IC95 Δ sup": 0.008708218683826503
+  },
+  {
+   "A": "SVC-RBF",
+   "B": "LogReg",
+   "n_A_ok_B_fail": 11382,
+   "n_A_fail_B_ok": 13283,
+   "chi2": 146.3612406243665,
+   "p_value": 1.0823537172242115e-33,
+   "odds_ratio": 0.8568901268490985,
+   "Δ macro-F1": 0.003077204515601062,
+   "IC95 Δ inf": -0.0018404458065206647,
+   "IC95 Δ sup": 0.008112034572198388
+  }
+ ],
+ "calibration": [
+  {
+   "modelo": "HGB",
+   "método": "isotonic",
+   "conjunto": "IID",
+   "ECE (15)": 0.033302410901609784,
+   "ECE por clase (media)": 0.010739271791854941,
+   "Brier": 0.09030026167096364,
+   "log-loss": 0.16215338017538888,
+   "macro-F1": 0.8852921048037903
+  },
+  {
+   "modelo": "HGB",
+   "método": "sigmoid",
+   "conjunto": "IID",
+   "ECE (15)": 0.036783726055303466,
+   "ECE por clase (media)": 0.011514855719043319,
+   "Brier": 0.09036287069511323,
+   "log-loss": 0.1635668833748186,
+   "macro-F1": 0.9022551303616229
+  },
+  {
+   "modelo": "HGB",
+   "método": "sin calibrar",
+   "conjunto": "IID",
+   "ECE (15)": 0.005202087822323598,
+   "ECE por clase (media)": 0.004764358441242686,
+   "Brier": 0.07331831255174538,
+   "log-loss": 0.1449913251420499,
+   "macro-F1": 0.9202188497010918
+  },
+  {
+   "modelo": "HGB",
+   "método": "isotonic",
+   "conjunto": "TEST",
+   "ECE (15)": 0.15604041832109702,
+   "ECE por clase (media)": 0.0484051915865241,
+   "Brier": 0.449327654078768,
+   "log-loss": 1.040519885049846,
+   "macro-F1": 0.4826566015281976
+  },
+  {
+   "modelo": "HGB",
+   "método": "sigmoid",
+   "conjunto": "TEST",
+   "ECE (15)": 0.15709583441455577,
+   "ECE por clase (media)": 0.04776173040897107,
+   "Brier": 0.44631656942683656,
+   "log-loss": 1.0027303214339607,
+   "macro-F1": 0.48019896314483224
+  },
+  {
+   "modelo": "HGB",
+   "método": "sin calibrar",
+   "conjunto": "TEST",
+   "ECE (15)": 0.19556643494195255,
+   "ECE por clase (media)": 0.056394216608649815,
+   "Brier": 0.4791827826709337,
+   "log-loss": 1.1449550319937405,
+   "macro-F1": 0.4880802954412053
+  },
+  {
+   "modelo": "SVC-RBF",
+   "método": "isotonic",
+   "conjunto": "IID",
+   "ECE (15)": 0.01547373619909771,
+   "ECE por clase (media)": 0.006945905031049909,
+   "Brier": 0.3233663811319342,
+   "log-loss": 0.5548037298633166,
+   "macro-F1": 0.6968068439317519
+  },
+  {
+   "modelo": "SVC-RBF",
+   "método": "sigmoid",
+   "conjunto": "IID",
+   "ECE (15)": 0.017456471742213646,
+   "ECE por clase (media)": 0.006559460870720567,
+   "Brier": 0.3272912486070761,
+   "log-loss": 0.5609704577158398,
+   "macro-F1": 0.6957281021023677
+  },
+  {
+   "modelo": "SVC-RBF",
+   "método": "isotonic",
+   "conjunto": "TEST",
+   "ECE (15)": 0.13601692327211315,
+   "ECE por clase (media)": 0.04174591967977099,
+   "Brier": 0.49069299224256147,
+   "log-loss": 0.8184065830302814,
+   "macro-F1": 0.40685730526876035
+  },
+  {
+   "modelo": "SVC-RBF",
+   "método": "sigmoid",
+   "conjunto": "TEST",
+   "ECE (15)": 0.13501603674300774,
+   "ECE por clase (media)": 0.04314047016677047,
+   "Brier": 0.5013044475057531,
+   "log-loss": 0.8593150099386023,
+   "macro-F1": 0.40795489926214606
+  }
+ ],
+ "calibration_method": {
+  "SVC-RBF": "sigmoid",
+  "HGB": "sigmoid"
+ },
+ "conformal": [
+  {
+   "modelo": "SVC-RBF",
+   "conjunto": "IID",
+   "q̂": 0.7944200201000753,
+   "cobertura": 0.8997,
+   "tamaño medio": 1.4874,
+   "% singleton": 51.575,
+   "cobertura Mondrian": 0.90025,
+   "tamaño Mondrian": 1.64515
+  },
+  {
+   "modelo": "SVC-RBF",
+   "conjunto": "TEST",
+   "q̂": 0.7944200201000753,
+   "cobertura": 0.8157104879512906,
+   "tamaño medio": 1.4412000114341252,
+   "% singleton": 56.98982362861962,
+   "cobertura Mondrian": 0.7742189063259297,
+   "tamaño Mondrian": 1.4710287854100563
+  },
+  {
+   "modelo": "HGB",
+   "conjunto": "IID",
+   "q̂": 0.3902806130447868,
+   "cobertura": 0.9507,
+   "tamaño medio": 1.0,
+   "% singleton": 100.0,
+   "cobertura Mondrian": 0.9569,
+   "tamaño Mondrian": 1.01215
+  },
+  {
+   "modelo": "HGB",
+   "conjunto": "TEST",
+   "q̂": 0.3902806130447868,
+   "cobertura": 0.7171840608295458,
+   "tamaño medio": 1.0,
+   "% singleton": 100.0,
+   "cobertura Mondrian": 0.7182774490466798,
+   "tamaño Mondrian": 1.0063745247691736
+  }
+ ],
+ "conformal_class": [
+  {
+   "modelo": "SVC-RBF",
+   "conjunto": "IID",
+   "clase": "Spruce/Fir",
+   "cobertura": 0.7951515151515152,
+   "tamaño": 1.708939393939394,
+   "cobertura Mondrian": 0.8981818181818182,
+   "n": 6600
+  },
+  {
+   "modelo": "SVC-RBF",
+   "conjunto": "IID",
+   "clase": "Lodgepole Pine",
+   "cobertura": 0.9900582446274352,
+   "tamaño": 1.2609961839726853,
+   "cobertura Mondrian": 0.8967664189596305,
+   "n": 9958
+  },
+  {
+   "modelo": "SVC-RBF",
+   "conjunto": "IID",
+   "clase": "Ponderosa Pine",
+   "cobertura": 0.9727503168567807,
+   "tamaño": 1.9493029150823828,
+   "cobertura Mondrian": 0.9125475285171103,
+   "n": 1578
+  },
+  {
+   "modelo": "SVC-RBF",
+   "conjunto": "IID",
+   "clase": "Cottonwood/Willow",
+   "cobertura": 0.8548387096774194,
+   "tamaño": 2.0080645161290325,
+   "cobertura Mondrian": 0.9274193548387096,
+   "n": 124
+  },
+  {
+   "modelo": "SVC-RBF",
+   "conjunto": "IID",
+   "clase": "Aspen",
+   "cobertura": 0.27586206896551724,
+   "tamaño": 1.3349753694581281,
+   "cobertura Mondrian": 0.8990147783251231,
+   "n": 406
+  },
+  {
+   "modelo": "SVC-RBF",
+   "conjunto": "IID",
+   "clase": "Douglas-fir",
+   "cobertura": 0.8451612903225807,
+   "tamaño": 1.889032258064516,
+   "cobertura Mondrian": 0.912258064516129,
+   "n": 775
+  },
+  {
+   "modelo": "SVC-RBF",
+   "conjunto": "IID",
+   "clase": "Krummholz",
+   "cobertura": 0.8568872987477638,
+   "tamaño": 1.039355992844365,
+   "cobertura Mondrian": 0.9302325581395349,
+   "n": 559
+  },
+  {
+   "modelo": "SVC-RBF",
+   "conjunto": "TEST",
+   "clase": "Spruce/Fir",
+   "cobertura": 0.687366102410911,
+   "tamaño": 1.5558070064270844,
+   "cobertura Mondrian": 0.7921305935246371,
+   "n": 66282
+  },
+  {
+   "modelo": "SVC-RBF",
+   "conjunto": "TEST",
+   "clase": "Lodgepole Pine",
+   "cobertura": 0.9748645890572258,
+   "tamaño": 1.3601067587722742,
+   "cobertura Mondrian": 0.7595258654525473,
+   "n": 63695
+  },
+  {
+   "modelo": "SVC-RBF",
+   "conjunto": "TEST",
+   "clase": "Ponderosa Pine",
+   "cobertura": 0.5991516436903499,
+   "tamaño": 1.6341463414634145,
+   "cobertura Mondrian": 0.2990455991516437,
+   "n": 943
+  },
+  {
+   "modelo": "SVC-RBF",
+   "conjunto": "TEST",
+   "clase": "Cottonwood/Willow",
+   "cobertura": null,
+   "tamaño": null,
+   "cobertura Mondrian": null,
+   "n": 0
+  },
+  {
+   "modelo": "SVC-RBF",
+   "conjunto": "TEST",
+   "clase": "Aspen",
+   "cobertura": 0.0,
+   "tamaño": 1.165137614678899,
+   "cobertura Mondrian": 0.45871559633027525,
+   "n": 545
+  },
+  {
+   "modelo": "SVC-RBF",
+   "conjunto": "TEST",
+   "clase": "Douglas-fir",
+   "cobertura": 0.5483870967741935,
+   "tamaño": 1.4086021505376345,
+   "cobertura Mondrian": 0.9139784946236559,
+   "n": 279
+  },
+  {
+   "modelo": "SVC-RBF",
+   "conjunto": "TEST",
+   "clase": "Krummholz",
+   "cobertura": 0.7049340498290181,
+   "tamaño": 1.1415486077186126,
+   "cobertura Mondrian": 0.8144846116267709,
+   "n": 8188
+  },
+  {
+   "modelo": "HGB",
+   "conjunto": "IID",
+   "clase": "Spruce/Fir",
+   "cobertura": 0.9434848484848485,
+   "tamaño": 1.0,
+   "cobertura Mondrian": 0.9434848484848485,
+   "n": 6600
+  },
+  {
+   "modelo": "HGB",
+   "conjunto": "IID",
+   "clase": "Lodgepole Pine",
+   "cobertura": 0.9701747338823057,
+   "tamaño": 1.0,
+   "cobertura Mondrian": 0.9701747338823057,
+   "n": 9958
+  },
+  {
+   "modelo": "HGB",
+   "conjunto": "IID",
+   "clase": "Ponderosa Pine",
+   "cobertura": 0.9581749049429658,
+   "tamaño": 1.0,
+   "cobertura Mondrian": 0.9581749049429658,
+   "n": 1578
+  },
+  {
+   "modelo": "HGB",
+   "conjunto": "IID",
+   "clase": "Cottonwood/Willow",
+   "cobertura": 0.6612903225806451,
+   "tamaño": 1.0,
+   "cobertura Mondrian": 0.9516129032258065,
+   "n": 124
+  },
+  {
+   "modelo": "HGB",
+   "conjunto": "IID",
+   "clase": "Aspen",
+   "cobertura": 0.7364532019704434,
+   "tamaño": 1.0,
+   "cobertura Mondrian": 0.9310344827586207,
+   "n": 406
+  },
+  {
+   "modelo": "HGB",
+   "conjunto": "IID",
+   "clase": "Douglas-fir",
+   "cobertura": 0.9174193548387096,
+   "tamaño": 1.0,
+   "cobertura Mondrian": 0.9174193548387096,
+   "n": 775
+  },
+  {
+   "modelo": "HGB",
+   "conjunto": "IID",
+   "clase": "Krummholz",
+   "cobertura": 0.9338103756708408,
+   "tamaño": 1.0,
+   "cobertura Mondrian": 0.9499105545617174,
+   "n": 559
+  },
+  {
+   "modelo": "HGB",
+   "conjunto": "TEST",
+   "clase": "Spruce/Fir",
+   "cobertura": 0.7276787061343954,
+   "tamaño": 1.0,
+   "cobertura Mondrian": 0.7276787061343954,
+   "n": 66282
+  },
+  {
+   "modelo": "HGB",
+   "conjunto": "TEST",
+   "clase": "Lodgepole Pine",
+   "cobertura": 0.7310620927859329,
+   "tamaño": 1.0,
+   "cobertura Mondrian": 0.7310620927859329,
+   "n": 63695
+  },
+  {
+   "modelo": "HGB",
+   "conjunto": "TEST",
+   "clase": "Ponderosa Pine",
+   "cobertura": 0.23435843054082714,
+   "tamaño": 1.0,
+   "cobertura Mondrian": 0.23435843054082714,
+   "n": 943
+  },
+  {
+   "modelo": "HGB",
+   "conjunto": "TEST",
+   "clase": "Cottonwood/Willow",
+   "cobertura": null,
+   "tamaño": null,
+   "cobertura Mondrian": null,
+   "n": 0
+  },
+  {
+   "modelo": "HGB",
+   "conjunto": "TEST",
+   "clase": "Aspen",
+   "cobertura": 0.05688073394495413,
+   "tamaño": 1.0,
+   "cobertura Mondrian": 0.13027522935779817,
+   "n": 545
+  },
+  {
+   "modelo": "HGB",
+   "conjunto": "TEST",
+   "clase": "Douglas-fir",
+   "cobertura": 0.9247311827956989,
+   "tamaño": 1.0,
+   "cobertura Mondrian": 0.9247311827956989,
+   "n": 279
+  },
+  {
+   "modelo": "HGB",
+   "conjunto": "TEST",
+   "clase": "Krummholz",
+   "cobertura": 0.6167562286272594,
+   "tamaño": 1.0,
+   "cobertura Mondrian": 0.6305569125549585,
+   "n": 8188
+  }
+ ],
+ "drift_power": [
+  {
+   "escenario": "elevación δ=0.0",
+   "alerta PSI": 0.0,
+   "alerta KS": 0.025,
+   "alerta JS": 0.0,
+   "alerta": 0.025,
+   "PSI elevación": 0.018335830810014588,
+   "JS clases": 0.0026711730846852434,
+   "macro-F1 ventana": 0.687718529692162
+  },
+  {
+   "escenario": "elevación δ=0.1",
+   "alerta PSI": 0.0,
+   "alerta KS": 0.275,
+   "alerta JS": 0.0,
+   "alerta": 0.275,
+   "PSI elevación": 0.03405051319336491,
+   "JS clases": 0.0026150105456116133,
+   "macro-F1 ventana": 0.676836461556118
+  },
+  {
+   "escenario": "elevación δ=0.25",
+   "alerta PSI": 0.0,
+   "alerta KS": 1.0,
+   "alerta JS": 0.0,
+   "alerta": 1.0,
+   "PSI elevación": 0.11261334570065232,
+   "JS clases": 0.006821243212652343,
+   "macro-F1 ventana": 0.6340525673750378
+  },
+  {
+   "escenario": "elevación δ=0.5",
+   "alerta PSI": 1.0,
+   "alerta KS": 1.0,
+   "alerta JS": 0.0,
+   "alerta": 1.0,
+   "PSI elevación": 0.35604789194438136,
+   "JS clases": 0.02976928579360698,
+   "macro-F1 ventana": 0.4787795496681978
+  },
+  {
+   "escenario": "cambio de priors",
+   "alerta PSI": 0.325,
+   "alerta KS": 1.0,
+   "alerta JS": 0.025,
+   "alerta": 1.0,
+   "PSI elevación": 0.18111968996032235,
+   "JS clases": 0.034663130151080815,
+   "macro-F1 ventana": 0.6991555735650348
+  },
+  {
+   "escenario": "bloques TEST (real)",
+   "alerta PSI": 1.0,
+   "alerta KS": 1.0,
+   "alerta JS": 1.0,
+   "alerta": 1.0,
+   "PSI elevación": 1.596153458113619,
+   "JS clases": 0.0744989649085735,
+   "macro-F1 ventana": 0.39914310991045554
+  }
+ ],
+ "drift_tta": [
+  {
+   "escenario": "elevación δ=0.1",
+   "detectada": 1.0,
+   "mediana_ventanas": 2.0,
+   "media_ventanas": 3.466666666666667,
+   "falsas_previas": 0.2,
+   "mediana peticiones": 1000.0
+  },
+  {
+   "escenario": "elevación δ=0.25",
+   "detectada": 1.0,
+   "mediana_ventanas": 1.0,
+   "media_ventanas": 1.0,
+   "falsas_previas": 0.2,
+   "mediana peticiones": 500.0
+  },
+  {
+   "escenario": "elevación δ=0.5",
+   "detectada": 1.0,
+   "mediana_ventanas": 1.0,
+   "media_ventanas": 1.0,
+   "falsas_previas": 0.06666666666666667,
+   "mediana peticiones": 500.0
+  },
+  {
+   "escenario": "cambio de priors",
+   "detectada": 1.0,
+   "mediana_ventanas": 1.0,
+   "media_ventanas": 1.0,
+   "falsas_previas": 0.0,
+   "mediana peticiones": 500.0
+  },
+  {
+   "escenario": "bloques TEST (real)",
+   "detectada": 1.0,
+   "mediana_ventanas": 1.0,
+   "media_ventanas": 1.0,
+   "falsas_previas": 0.2,
+   "mediana peticiones": 500.0
+  }
+ ],
+ "drift_config": {
+  "window": 500,
+  "psi_threshold": 0.2,
+  "alpha": 0.05,
+  "sd_elevation": 286.728962811729
+ },
+ "fit_time": {
+  "SVC-RBF": 35.2489699999569,
+  "LinearSVC": 32.395339800044894,
+  "Nyström-1000": 50.56283389998134,
+  "LogReg": 40.3256816000212,
+  "HGB": 107.94704140000977
+ },
+ "elapsed_min": 77.4628331349988
+}
